@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import gradient from '../../styles/animations'
+import {gradient} from '../../styles/animations'
 import contentFont from '../../styles/fonts'
 
 export const Background = styled.div`

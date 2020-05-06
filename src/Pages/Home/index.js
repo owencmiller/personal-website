@@ -9,6 +9,7 @@ import {
     Action as ActionStyled,
 } from './styles'
 import SocialMedia from '../../components/SocialMedia'
+import GoToButton from '../../components/Experiments/GotoButton'
 import {contentFont} from '../../styles/fonts'
 
 const HomeWrapper = styled.div`
@@ -25,10 +26,10 @@ const HomeWrapper = styled.div`
 
 function Home (props){
     return(
-        <HomeWrapper>
+        <HomeWrapper id='home'>
             <InfoStyled>
                 <NameStyled>Owen Miller</NameStyled>
-                <DescriptionStyled>Your friendly neighborhood math student and fullstack developer.</DescriptionStyled>
+                <DescriptionStyled>Your friendly neighborhood math student and fullstack developer<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' style={{color:'white'}}>.</a></DescriptionStyled>
                 <SocialNetworkStyled>
                     <SocialMedia link="https://twitter.com/owen_c_miller" type="twitter">
                         owen_c_miller
@@ -41,6 +42,7 @@ function Home (props){
                     </SocialMedia>
                 </SocialNetworkStyled>
             </InfoStyled>
+            <GoToButton>Experiments</GoToButton>
         </HomeWrapper>
     )
 }

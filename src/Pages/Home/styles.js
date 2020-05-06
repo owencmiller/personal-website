@@ -12,10 +12,15 @@ export const Info = styled.div`
   width: 70vw;
   text-align: center;
 
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `
 
 export const Name = styled.h1`
   margin: 0;
+  margin-top: 1em;
   color: #fff;
   font-family: ${titleFont};
   font-weight: 200;
@@ -27,7 +32,7 @@ export const Name = styled.h1`
 
 
 export const Description = styled.h3`
-  margin: .8em 0 .5em 0;
+  margin: 1.2em 0 .8em 0;
   padding: 0 5px;
   color: #fff;
   font-weight: 300;

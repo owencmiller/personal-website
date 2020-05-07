@@ -1,5 +1,5 @@
 import React from 'react';
-import {ExperimentsWrapper, ExperimentsPage, ExperimentTitle, ExperimentsContainer, ExperimentElement, ExperimentText} from './styles'
+import {ExperimentsWrapper, ExperimentsPage, ExperimentTitle, ExperimentsContainer, ExperimentElement, ExperimentText, ExperimentElementBackground} from './styles'
 import nnImage from '../../../assets/img/neural_net_fixed.png'
 
 function Experiments (props){
@@ -8,8 +8,9 @@ function Experiments (props){
             <ExperimentsWrapper>
                 <ExperimentTitle>EXPERIMENTS</ExperimentTitle>
                 <ExperimentsContainer>
-                    <ExperimentElement imgurl={nnImage} href="https://github.com/owencmiller/gonet">
-                        <ExperimentText>GoNET</ExperimentText>
+                    <ExperimentElement href="https://github.com/owencmiller/gonet">
+                        <ExperimentElementBackground imgurl={nnImage} ></ExperimentElementBackground>
+                        <ExperimentText>GONET</ExperimentText>
                     </ExperimentElement>
                 </ExperimentsContainer>
             </ExperimentsWrapper>

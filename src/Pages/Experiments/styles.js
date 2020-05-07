@@ -34,7 +34,7 @@ export const ExperimentsContainer = styled.div`
     height: 100%;
     width: 100%;
 
-    padding: 8vh 10vh;
+    padding: 3% 5%;
 
     display: flex;
     flex-direction: row;
@@ -44,25 +44,44 @@ export const ExperimentsContainer = styled.div`
 
 export const ExperimentElement = styled.a`
     height: 30%;
-    width: 40vh;
+    width: 40%;
+    position: relative;
+    min-width: 20em;
+`
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+export const ExperimentElementBackground = styled.div`
+    height: 100%;
+    width: 100%;
 
-    font-size: 10vh;
-    font-weight: 700;
-    color: white;
-
-    background: url(${props => props.imgurl || 'white'});
+    background: url(${props => props.imgurl});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
+    border-radius: 20px;
 
-    border-radius: 25px;
+    ${ExperimentElement}:hover & {
+        filter: blur(3px);
+    }
+
+    z-index: 0;
 `
 
 export const ExperimentText = styled.h2`
-    transform: rotate(-19deg);
+    height:100%;
+    width: 100%;
+    display: none;
 
+    ${ExperimentElement}:hover & {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 10;
+        color: white;
+        font-size: 6em;
+        font-weight: 700;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
 `

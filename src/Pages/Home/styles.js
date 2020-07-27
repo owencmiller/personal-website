@@ -21,7 +21,6 @@ export const Info = styled.div`
 export const Name = styled.h1`
   margin: 0;
   margin-top: 1em;
-  color: #fff;
   font-family: ${titleFont};
   font-weight: 200;
   font-size: 5em;
@@ -34,7 +33,6 @@ export const Name = styled.h1`
 export const Description = styled.h3`
   margin: 1.2em 0 .8em 0;
   padding: 0 5px;
-  color: #fff;
   font-weight: 300;
   font-size: 1.75em;
   animation: ${fadeIn} 2s ease;

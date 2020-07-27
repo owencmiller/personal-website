@@ -18,7 +18,6 @@ export const GotoButtonStyled = styled.a`
     margin-bottom: 10px;
     
 
-    color:#fff;
     font-size: 20;
     text-decoration: none;
     animation: ${fadeIn} 1s ease;

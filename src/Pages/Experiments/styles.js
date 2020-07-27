@@ -83,5 +83,7 @@ export const ExperimentText = styled.h2`
         z-index: 2;
         top: 0;
         left: 0;
+        background-color: rgba(0,0,0,.4);
+        border-radius: 20px;
     }
 `

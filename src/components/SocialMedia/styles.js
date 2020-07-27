@@ -3,13 +3,14 @@ import { contentFont } from '../../styles/fonts'
 
 export const SocialButton = styled.a`
   opacity: 0.7;
-  margin: 0em .5em;
-  display: inline-block;
+  margin: 0em 1em;
+
   vertical-align: top;
-  color: #fff;
+  color: #4a4a4a;
   text-decoration: none;
   transition: all .3s ease;
   &:hover {
+    color: #000;
     opacity: 1;
   }
   > i {
@@ -21,7 +22,7 @@ export const SocialButton = styled.a`
 export const ButtonText = styled.span`
   display: inline-block;
   vertical-align: super;
-  border-bottom: 1px dotted #fff;
+  
   font-size: 1em;
   font-family: ${contentFont};
   font-weight: 300;

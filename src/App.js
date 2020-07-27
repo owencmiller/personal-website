@@ -6,10 +6,10 @@ import Experiments from './Pages/Experiments';
 class App extends React.Component {
   render() {
     return(
-      <Background>
-        <Home/>
-        <Experiments/>
-      </Background>
+        <div>
+          <Home/>
+          <Experiments/>
+        </div>
     );
   }
 }

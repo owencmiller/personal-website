@@ -26,7 +26,7 @@ export const ExperimentTitle = styled.h1`
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     
-    font-size: 90;
+    font-size: 90px;
     font-weight: 500;
 `
 

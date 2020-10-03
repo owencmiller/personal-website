@@ -9,7 +9,7 @@ import {
     Action as ActionStyled,
 } from './styles'
 import SocialMedia from '../../components/SocialMedia'
-import GoToButton from '../../components/Experiments/GotoButton'
+import NavBar from '../../components/NavBar'
 import {contentFont} from '../../styles/fonts'
 
 const HomeWrapper = styled.div`
@@ -27,6 +27,7 @@ const HomeWrapper = styled.div`
 function Home (props){
     return(
         <HomeWrapper id='home'>
+            <NavBar />
             <InfoStyled>
                 <NameStyled>Owen Miller</NameStyled>
                 <DescriptionStyled>Your friendly neighborhood math student and fullstack developer<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' style={{color:'white'}}>.</a></DescriptionStyled>
@@ -42,7 +43,6 @@ function Home (props){
                     </SocialMedia>
                 </SocialNetworkStyled>
             </InfoStyled>
-            <GoToButton>Experiments</GoToButton>
         </HomeWrapper>
     )
 }

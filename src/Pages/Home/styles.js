@@ -20,7 +20,6 @@ export const Info = styled.div`
 
 export const Name = styled.h1`
   margin: 0;
-  margin-top: 1em;
   font-family: ${titleFont};
   font-weight: 200;
   font-size: 5em;

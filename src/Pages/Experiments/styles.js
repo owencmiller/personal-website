@@ -42,48 +42,20 @@ export const ExperimentsContainer = styled.div`
     flex-wrap: wrap;
 `
 
-export const ExperimentElement = styled.a`
-    height: 30%;
-    width: 40%;
-    position: relative;
+export const ExperimentBlurb = styled.i`
+    width: 100%;
+    height: 2em;
     min-width: 20em;
+
+    font-size: 1.15em;
+    text-align: center;
+    border-bottom: 2px dotted;
 `
 
-export const ExperimentElementBackground = styled.div`
-    height: 100%;
+export const ExperimentElement = styled.a`
     width: 100%;
+    text-decoration: none;
+    color: #4a4a4a;
 
-    background: url(${props => props.imgurl});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; 
-    border-radius: 20px;
 
-    ${ExperimentElement}:hover & {
-        filter: blur(3px);
-    }
-
-    z-index: 0;
-`
-
-export const ExperimentText = styled.h2`
-    height:100%;
-    width: 100%;
-    display: none;
-
-    ${ExperimentElement}:hover & {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        z-index: 10;
-        color: white;
-        font-size: 6em;
-        font-weight: 700;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        background-color: rgba(0,0,0,.4);
-        border-radius: 20px;
-    }
 `

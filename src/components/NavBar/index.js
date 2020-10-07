@@ -1,19 +1,19 @@
 import React from 'react'
 import {
     NavBarStyled,
-    NavLinkStyled
+    NavLinkStyled,
+    MainIcon
 } from './styles'
 import {
     Link
 } from 'react-router-dom'
-import icon from '../../../assets/img/initials_black2.svg'
 
 
 function NavBar(props){
     return (
         <NavBarStyled>
             <Link to="/">
-                <img src={icon} alt="Main Icon Image" width="100px"/>
+                <MainIcon>OM</MainIcon>
             </Link>
             <Link to="/tidbits">
                 <NavLinkStyled>

@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { Background}  from './components/Background';
 import Home from './Pages/Home';
-import Experiments from './Pages/Experiments';
+import Tidbits from './Pages/Tidbits';
 import NavBar from './components/NavBar'
 
 class App extends React.Component {
@@ -15,8 +15,8 @@ class App extends React.Component {
     return(
       <Router>
         <Switch>
-          <Route path="/experiments">
-            <Experiments />
+          <Route path="/tidbits">
+            <Tidbits />
           </Route>
           <Route path="/">
             <Home />

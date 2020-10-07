@@ -8,7 +8,7 @@ function Experiments (props){
     return (
         <BasicPage>
             <NavBar />
-                <ExperimentTitle>EXPERIMENTS</ExperimentTitle>
+                <ExperimentTitle>TIDBITS</ExperimentTitle>
                 <ExperimentsContainer>
                     <ExperimentElement href="https://github.com/owencmiller/gonet"> gonet </ExperimentElement>
                     <ExperimentElement href="https://github.com/owencmiller/personal-website"> personal website </ExperimentElement>

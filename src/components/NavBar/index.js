@@ -17,7 +17,7 @@ function NavBar(props){
             </Link>
             <Link to="/experiments">
                 <NavLinkStyled>
-                    Experiments
+                    Tidbits
                 </NavLinkStyled>
             </Link>
         </NavBarStyled>

@@ -1,6 +1,5 @@
 import React from 'react';
 import {ExperimentsWrapper, ExperimentsPage, ExperimentTitle, ExperimentsContainer, ExperimentBlurb, ExperimentElement} from './styles'
-import nnImage from '../../../assets/img/neural_net_fixed.png'
 import NavBar from '../../components/NavBar'
 import {BasicPage} from '../BasicPage/styles'
 

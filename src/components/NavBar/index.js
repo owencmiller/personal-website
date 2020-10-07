@@ -15,9 +15,9 @@ function NavBar(props){
             <Link to="/">
                 <img src={icon} alt="Main Icon Image" width="100px"/>
             </Link>
-            <Link to="/experiments">
+            <Link to="/tidbits">
                 <NavLinkStyled>
-                    Tidbits
+                    TIDBITS
                 </NavLinkStyled>
             </Link>
         </NavBarStyled>

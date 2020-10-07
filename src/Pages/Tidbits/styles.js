@@ -6,7 +6,7 @@ import {
 } from '../../styles/animations'
 
 
-export const ExperimentsWrapper = styled.div`
+export const TidbitsWrapper = styled.div`
     min-height: 70vh;
     width: 100%;
     padding: 0vh 15vw;
@@ -18,7 +18,7 @@ export const ExperimentsWrapper = styled.div`
     justify-content: center;
 `
 
-export const ExperimentTitle = styled.h1`
+export const TidbitTitle = styled.h1`
     top: calc(50% - 100px);
     left: 15vw;
 
@@ -37,7 +37,7 @@ export const ExperimentTitle = styled.h1`
     }
 `
 
-export const ExperimentsContainer = styled.ul`
+export const TidbitsContainer = styled.ul`
     padding: 3vh 10vw;
     width: 50%;
 
@@ -47,7 +47,7 @@ export const ExperimentsContainer = styled.ul`
     align-items: center;
 `
 
-export const ExperimentElement = styled.a`
+export const TidbitElement = styled.a`
     margin: 5vh 3vw;
 
     font-size: 30px;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { contentFont } from '../../styles/fonts'
+import { contentFont, iconFont } from '../../styles/fonts'
 
 
 export const NavBarStyled = styled.div`
@@ -28,7 +28,7 @@ export const NavLinkStyled = styled.h4`
 `
 
 export const MainIcon = styled.h1`
-    font-family: 'IBM Plex Serif', serif;
+    font-family: ${iconFont};
     font-size: 50px;
 
     color: #000;

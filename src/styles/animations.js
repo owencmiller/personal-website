@@ -26,11 +26,11 @@ export const slideToLeft = keyframes`
 export const slideToRight = keyframes`
   0% {
     opacity: 0;
-    transform: translateX(-5em);
+    transform: translateX(-5em) rotate(-180deg);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) rotate(-180deg);
   }
 `
 

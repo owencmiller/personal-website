@@ -1,21 +1,17 @@
 import styled from 'styled-components'
 import {contentFont} from '../../styles/fonts'
+import {
+    slideToRight,
+    scaleIn
+} from '../../styles/animations'
 
-export const ExperimentsPage = styled.div`
-    min-height: 100vh;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-family: ${contentFont};
-`
 
 export const ExperimentsWrapper = styled.div`
-    height: 80vh;
-    width: 80%;
+    min-height: 70vh;
+    width: 100%;
+    padding: 0vh 15vw;
 
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,39 +19,48 @@ export const ExperimentsWrapper = styled.div`
 `
 
 export const ExperimentTitle = styled.h1`
+    top: 200px;
+    left: 15vw;
+
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     
-    font-size: 90px;
+    position: fixed;
+    
+    font-size: 80px;
     font-weight: 500;
+
+    animation: ${slideToRight} 1s ease;
+
+    @media (max-width: 500px) {
+        visibility: hidden;
+    }
 `
 
-export const ExperimentsContainer = styled.div`
-    height: 100%;
-    width: 100%;
-
-    padding: 3% 5%;
+export const ExperimentsContainer = styled.ul`
+    padding: 3vh 10vw;
+    width: 50%;
 
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-`
-
-export const ExperimentBlurb = styled.i`
-    width: 100%;
-    height: 2em;
-    min-width: 20em;
-
-    font-size: 1.15em;
-    text-align: center;
-    border-bottom: 2px dotted;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
 
 export const ExperimentElement = styled.a`
-    width: 100%;
+    margin: 5vh 3vw;
+
+    font-size: 30px;
+    text-align: center;
+
+    color: #888888;
     text-decoration: none;
-    color: #4a4a4a;
 
+    border-bottom: 2px solid;
 
+    animation: ${scaleIn} 1s ease;
+
+    &:hover{
+        color: #000;
+    }
 `

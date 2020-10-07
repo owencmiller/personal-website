@@ -6,16 +6,23 @@ export const NavBarStyled = styled.div`
     top: 0;
     left: 0;
     width: 100%;
-    height: 4em;
+    height: 140px;
 
-    position: absolute;
-    padding: 2.5em 15vw;
+    position: fixed;
+    padding: 0vh 15vw;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `
 
 export const NavLinkStyled = styled.h4`
     font: ${contentFont};
-    color: grey;
+    color: #4a4a4a;
+    opactiy: 0.7;
+
+    &:hover{
+        color: #000;
+        opacity: 1;
+    }
 `

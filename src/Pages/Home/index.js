@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import {BasicPage} from '../BasicPage/styles'
 import {
     Info as InfoStyled,
     Name as NameStyled,
@@ -12,21 +13,11 @@ import SocialMedia from '../../components/SocialMedia'
 import NavBar from '../../components/NavBar'
 import {contentFont} from '../../styles/fonts'
 
-const HomeWrapper = styled.div`
-    min-height: 100vh;
-    width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    font-family: ${contentFont};
-`
 
 function Home (props){
     return(
-        <HomeWrapper id='home'>
+        <BasicPage>
             <NavBar />
             <InfoStyled>
                 <NameStyled>Owen Miller</NameStyled>
@@ -43,7 +34,7 @@ function Home (props){
                     </SocialMedia>
                 </SocialNetworkStyled>
             </InfoStyled>
-        </HomeWrapper>
+        </BasicPage>
     )
 }
 

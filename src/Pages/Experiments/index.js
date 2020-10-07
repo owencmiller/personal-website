@@ -1,24 +1,19 @@
 import React from 'react';
 import {ExperimentsWrapper, ExperimentsPage, ExperimentTitle, ExperimentsContainer, ExperimentBlurb, ExperimentElement} from './styles'
 import nnImage from '../../../assets/img/neural_net_fixed.png'
-import NavBar from '../../components/NavBar';
+import NavBar from '../../components/NavBar'
+import {BasicPage} from '../BasicPage/styles'
 
 function Experiments (props){
     return (
-        <ExperimentsPage id='experiments'>
+        <BasicPage>
             <NavBar />
-            <ExperimentsWrapper>
                 <ExperimentTitle>EXPERIMENTS</ExperimentTitle>
                 <ExperimentsContainer>
-                    <ExperimentBlurb>
-                        Sometimes I mess around with stuff, this is that...
-                    </ExperimentBlurb>
-                    <ul>
-                        <li><ExperimentElement>Gonet</ExperimentElement></li>
-                    </ul>
+                    <ExperimentElement href="https://github.com/owencmiller/gonet"> gonet </ExperimentElement>
+                    <ExperimentElement href="https://github.com/owencmiller/personal-website"> personal website </ExperimentElement>
                 </ExperimentsContainer>
-            </ExperimentsWrapper>
-        </ExperimentsPage>
+        </BasicPage>
     )
 }
 

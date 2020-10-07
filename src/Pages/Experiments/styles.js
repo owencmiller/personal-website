@@ -19,7 +19,7 @@ export const ExperimentsWrapper = styled.div`
 `
 
 export const ExperimentTitle = styled.h1`
-    top: 200px;
+    top: calc(50% - 100px);
     left: 15vw;
 
     writing-mode: vertical-lr;

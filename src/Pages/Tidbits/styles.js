@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {contentFont} from '../../styles/fonts'
 import {
+    slideToLeft,
     slideToRight,
     scaleIn
 } from '../../styles/animations'
@@ -32,35 +33,28 @@ export const TidbitTitle = styled.h1`
 
     animation: ${slideToRight} 1s ease;
 
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
         visibility: hidden;
+    }
+    @media (max-height: 500px) {
+        top: 150px;
     }
 `
 
 export const TidbitsContainer = styled.ul`
-    padding: 3vh 10vw;
+
+    padding: 0vh 5vw;
     width: 50%;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-`
 
-export const TidbitElement = styled.a`
-    margin: 5vh 3vw;
+    animation: ${slideToLeft} 1s ease;
 
-    font-size: 30px;
-    text-align: center;
-
-    color: #888888;
-    text-decoration: none;
-
-    border-bottom: 2px solid;
-
-    animation: ${scaleIn} 1s ease;
-
-    &:hover{
-        color: #000;
+    @media (max-width: 700px) {
+        width: 85%;
+    }
+    @media (max-height: 550px){
+        padding-top: 100px;
     }
 `

@@ -1,19 +1,20 @@
 import React from 'react';
-import {ExperimentsWrapper, ExperimentsPage, ExperimentTitle, ExperimentsContainer, ExperimentBlurb, ExperimentElement} from './styles'
+import {TidbitTitle, TidbitsContainer} from './styles'
 import NavBar from '../../components/NavBar'
+import TidbitElement from '../../components/TidbitElement'
 import {BasicPage} from '../BasicPage/styles'
 
-function Experiments (props){
+function Tidbits (props){
     return (
         <BasicPage>
             <NavBar />
-                <ExperimentTitle>TIDBITS</ExperimentTitle>
-                <ExperimentsContainer>
-                    <ExperimentElement href="https://github.com/owencmiller/gonet"> gonet </ExperimentElement>
-                    <ExperimentElement href="https://github.com/owencmiller/personal-website"> personal website </ExperimentElement>
-                </ExperimentsContainer>
+            <TidbitTitle>TIDBITS</TidbitTitle>
+            <TidbitsContainer>
+                <TidbitElement summary="A neural network library written in Golang." link="https://github.com/owencmiller/gonet"> Gonet </TidbitElement>
+                <TidbitElement summary="This personal website / blog written with React." link="https://github.com/owencmiller/personal-website"> Personal website </TidbitElement>
+            </TidbitsContainer>
         </BasicPage>
     )
 }
 
-export default Experiments
+export default Tidbits

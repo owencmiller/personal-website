@@ -32,6 +32,9 @@ function Home (props){
                     <SocialMedia link="https://www.linkedin.com/in/owen-c-miller/" type="linkedin">
                         owen-c-miller
                     </SocialMedia>
+                    <SocialMedia link="" type="envelope">
+                        mail [at] owenmiller [dot] me
+                    </SocialMedia>
                 </SocialNetworkStyled>
             </InfoStyled>
         </BasicPage>

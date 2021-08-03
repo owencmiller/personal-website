@@ -43,7 +43,7 @@ export const TidbitTitle = styled.h1`
 
 export const TidbitsContainer = styled.ul`
 
-    padding: 0vh 5vw;
+    padding: 7vh 5vw;
     width: 50%;
 
     display: flex;

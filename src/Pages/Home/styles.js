@@ -10,6 +10,7 @@ import { titleFont, contentFont } from '../../styles/fonts'
 
 export const Info = styled.div`
   width: 70vw;
+  padding-top: 14vh;
   text-align: center;
 
   flex-grow: 1;

@@ -2,6 +2,7 @@ import React from 'react'
 import {
     NavBarStyled,
     NavLinkStyled,
+    NavPagesStyled,
     MainIcon
 } from './styles'
 import {
@@ -15,11 +16,18 @@ function NavBar(props){
             <Link to="/">
                 <MainIcon>OM</MainIcon>
             </Link>
-            <Link to="/tidbits">
-                <NavLinkStyled>
-                    TIDBITS
-                </NavLinkStyled>
-            </Link>
+            <NavPagesStyled>
+                <Link to="/tidbits">
+                    <NavLinkStyled>
+                        TIDBITS
+                    </NavLinkStyled>
+                </Link>
+                <Link to="/blog">
+                    <NavLinkStyled>
+                        BLOG
+                    </NavLinkStyled>
+                </Link>
+            </NavPagesStyled>
         </NavBarStyled>
     )
 }

@@ -8,13 +8,17 @@ import {
 import { Background}  from './components/Background';
 import Home from './Pages/Home';
 import Tidbits from './Pages/Tidbits';
-import NavBar from './components/NavBar'
+import Blog from './Pages/Blog';
+import NavBar from './components/NavBar';
 
 class App extends React.Component {
   render() {
     return(
       <Router>
         <Switch>
+          <Route path="/blog">
+            <Blog />
+          </Route>
           <Route path="/tidbits">
             <Tidbits />
           </Route>

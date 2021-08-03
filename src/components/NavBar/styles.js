@@ -8,7 +8,6 @@ export const NavBarStyled = styled.div`
     width: 100%;
     height: 140px;
 
-    position: fixed;
     padding: 0vh 15vw;
 
     display: flex;
@@ -25,6 +24,14 @@ export const NavLinkStyled = styled.h4`
         color: #000;
         opacity: 1;
     }
+`
+
+export const NavPagesStyled = styled.div`
+    width: 8em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
 
 export const MainIcon = styled.h1`

@@ -49,6 +49,7 @@ export const BlogNav = styled.div`
     justify-content: space-evenly;
 
     padding: 1em 2em;
+    margin-top: 1em;
     border-bottom: grey;
     border-top: grey;
     border-left: white;

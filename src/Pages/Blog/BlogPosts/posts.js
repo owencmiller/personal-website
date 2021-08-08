@@ -67,3 +67,40 @@ export const cuyahoga =
         <BlogImage style={{maxWidth: "70%"}} src= {img14}/>
     </BlogImageWrapper>
 </BlogPost>
+
+
+import img20 from '../../../../assets/img/indianadunes/IMG_0399.jpeg'
+import img21 from '../../../../assets/img/indianadunes/IMG_0410.jpeg'
+import img22 from '../../../../assets/img/indianadunes/IMG_0412.jpeg'
+import img23 from '../../../../assets/img/indianadunes/IMG_0416.jpeg'
+import img24 from '../../../../assets/img/indianadunes/IMG_0417.jpeg'
+import img25 from '../../../../assets/img/indianadunes/IMG_0421.jpeg'
+import img26 from '../../../../assets/img/indianadunes/IMG_0424.jpeg'
+import img27 from '../../../../assets/img/indianadunes/IMG_0436.jpeg'
+import img28 from '../../../../assets/img/indianadunes/IMG_0445.jpeg'
+import img29 from '../../../../assets/img/indianadunes/IMG_0452.jpeg'
+
+
+
+export const indianadunes = 
+<BlogPost>
+    <BlogHeader>
+    Indiana Dunes National Park
+    </BlogHeader>
+    <BlogText>
+    &emsp; &emsp; Third stop was Indiana Dunes National Park! About an hour hike out to a beautiful quiet beach on Lake Michigan was totally worth it.
+    The 90 degree heat made the trek difficult, but I learned a lot about the biomes in the area and that reapplying sunblock is essential.
+    </BlogText>
+    <BlogImageWrapper>
+        <BlogImage src= {img20}/>
+        <BlogImage src= {img21}/>
+        <BlogImage src= {img22}/>
+        <BlogImage src= {img29}/>
+        <BlogImage src= {img24}/>
+        <BlogImage src= {img25}/>
+        <BlogImage src= {img26}/>
+        <BlogImage src= {img27}/>
+        <BlogImage src= {img28}/>
+        <BlogImage src= {img23}/>
+    </BlogImageWrapper>
+</BlogPost>

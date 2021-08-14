@@ -104,3 +104,75 @@ export const indianadunes =
         <BlogImage src= {img23}/>
     </BlogImageWrapper>
 </BlogPost>
+
+
+import img30 from '../../../../assets/img/voyaguer/IMG_0516.jpeg'
+import img31 from '../../../../assets/img/voyaguer/IMG_0519.jpeg'
+import img32 from '../../../../assets/img/voyaguer/IMG_0520.jpeg'
+import img33 from '../../../../assets/img/voyaguer/IMG_0528.jpeg'
+import img34 from '../../../../assets/img/voyaguer/IMG_0535.jpeg'
+
+
+
+export const voyaguer = 
+<BlogPost>
+    <BlogHeader>
+    Voyaguer National Park
+    </BlogHeader>
+    <BlogText>
+    &emsp; &emsp; My fourth stop was Voyaguer National Park up in Northern Minnesota! The park was massive and had some amazing hiking. I met a couple who 
+    also lived in their van and they gave me plenty of great tips! I didn't bring my camera on my long hike becuase I wanted to just enjoy the park, 
+    so there aren't many photos from this park. Nonetheless, I'm now off to North Dakota!
+    </BlogText>
+    <BlogImageWrapper>
+        <BlogImage src= {img30}/>
+        <BlogImage src= {img31}/>
+        <BlogImage src= {img32}/>
+        <BlogImage src= {img33}/>
+        <BlogImage src= {img34}/>
+    </BlogImageWrapper>
+</BlogPost>
+
+
+
+import img40 from '../../../../assets/img/theodoreroosevelt/IMG_0577.jpeg'
+import img41 from '../../../../assets/img/theodoreroosevelt/IMG_0591.jpeg'
+import img42 from '../../../../assets/img/theodoreroosevelt/IMG_0598.jpeg'
+import img43 from '../../../../assets/img/theodoreroosevelt/IMG_0609.jpeg'
+import img44 from '../../../../assets/img/theodoreroosevelt/IMG_0620.jpeg'
+import img45 from '../../../../assets/img/theodoreroosevelt/IMG_0621.jpeg'
+import img46 from '../../../../assets/img/theodoreroosevelt/IMG_0632.jpeg'
+import img47 from '../../../../assets/img/theodoreroosevelt/IMG_0643.jpeg'
+import img48 from '../../../../assets/img/theodoreroosevelt/IMG_0668.jpeg'
+import img49 from '../../../../assets/img/theodoreroosevelt/IMG_0680.jpeg'
+import img410 from '../../../../assets/img/theodoreroosevelt/IMG_0692.jpeg'
+import img411 from '../../../../assets/img/theodoreroosevelt/IMG_0696.jpeg'
+
+
+
+
+
+export const theodore = 
+<BlogPost>
+    <BlogHeader>
+    Theodore Roosevelt National Park
+    </BlogHeader>
+    <BlogText>
+    &emsp; &emsp; Theodore Roosevelt National Park has been my favorite park so far. The rolling hills, ancient riverbed, and incredible wildlife
+    has made this trip more than memorable. 
+    </BlogText>
+    <BlogImageWrapper>
+        <BlogImage src= {img40}/>
+        <BlogImage src= {img41}/>
+        <BlogImage src= {img42}/>
+        <BlogImage src= {img43}/>
+        <BlogImage src= {img44}/>
+        <BlogImage src= {img45}/>
+        <BlogImage src= {img46}/>
+        <BlogImage src= {img47}/>
+        <BlogImage src= {img48}/>
+        <BlogImage src= {img49}/>
+        <BlogImage src= {img410}/>
+        <BlogImage src= {img411}/>
+    </BlogImageWrapper>
+</BlogPost>

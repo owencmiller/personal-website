@@ -21,7 +21,7 @@ function Home (props){
             <NavBar />
             <InfoStyled>
                 <NameStyled>Owen Miller</NameStyled>
-                <DescriptionStyled>Your friendly neighborhood math student and fullstack developer<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' style={{color:'white'}}>.</a></DescriptionStyled>
+                <DescriptionStyled>Your friendly neighborhood fullstack developer and vanlife traveller<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' style={{color:'white'}}>.</a></DescriptionStyled>
                 <SocialNetworkStyled>
                     <SocialMedia link="https://twitter.com/owen_c_miller" type="twitter">
                         owen_c_miller

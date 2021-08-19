@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import NavBar from '../../components/NavBar'
 import {BasicPage} from '../BasicPage/styles'
-import {acadia, cuyahoga, indianadunes, theodore, voyaguer} from './BlogPosts/posts'
+import {acadia, badlands, cuyahoga, indianadunes, theodore, voyaguer} from './BlogPosts/posts'
 import { BlogNav, BlogNavLink } from './styles';
 
-const posts = [acadia, cuyahoga, indianadunes, voyaguer, theodore]
+const posts = [acadia, cuyahoga, indianadunes, voyaguer, theodore, badlands]
 
 function Blog (props){
     const [page, setPage] = useState(0)
@@ -27,6 +27,9 @@ function Blog (props){
                 </BlogNavLink>
                 <BlogNavLink onClick={() => setPage(4)}>
                     Theodore Roosevelt
+                </BlogNavLink>
+                <BlogNavLink onClick={() => setPage(5)}>
+                    Badlands
                 </BlogNavLink>
             </BlogNav>
             {posts[page]}

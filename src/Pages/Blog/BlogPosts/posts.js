@@ -176,3 +176,36 @@ export const theodore =
         <BlogImage src= {img411}/>
     </BlogImageWrapper>
 </BlogPost>
+
+
+
+import img50 from '../../../../assets/img/badlands/IMG_0723.jpeg'
+import img51 from '../../../../assets/img/badlands/IMG_0726.jpeg'
+import img52 from '../../../../assets/img/badlands/IMG_0728.jpeg'
+import img53 from '../../../../assets/img/badlands/IMG_0738.jpeg'
+import img54 from '../../../../assets/img/badlands/IMG_0740.jpeg'
+import img55 from '../../../../assets/img/badlands/IMG_0749.jpeg'
+import img56 from '../../../../assets/img/badlands/IMG_0760.jpeg'
+import img57 from '../../../../assets/img/badlands/IMG_0768.jpeg'
+import img58 from '../../../../assets/img/badlands/IMG_0772.jpeg'
+import img59 from '../../../../assets/img/badlands/IMG_0784.jpeg'
+
+
+export const badlands = 
+<BlogPost>
+    <BlogHeader>
+    Badlands National Park
+    </BlogHeader>
+    <BlogImageWrapper>
+        <BlogImage src= {img50}/>
+        <BlogImage src= {img51}/>
+        <BlogImage src= {img52}/>
+        <BlogImage src= {img53}/>
+        <BlogImage src= {img54}/>
+        <BlogImage src= {img55}/>
+        <BlogImage src= {img56}/>
+        <BlogImage src= {img57}/>
+        <BlogImage src= {img58}/>
+        <BlogImage src= {img59}/>
+    </BlogImageWrapper>
+</BlogPost>

@@ -209,3 +209,61 @@ export const badlands =
         <BlogImage src= {img59}/>
     </BlogImageWrapper>
 </BlogPost>
+
+
+
+import img60 from '../../../../assets/img/rushmoore/IMG_0704.jpeg'
+import img61 from '../../../../assets/img/rushmoore/IMG_0707.jpeg'
+import img62 from '../../../../assets/img/rushmoore/IMG_0708.jpeg'
+import img63 from '../../../../assets/img/rushmoore/IMG_0713.jpeg'
+
+
+export const rushmore = 
+<BlogPost>
+    <BlogHeader>
+    Mount Rushmore National Monument
+    </BlogHeader>
+    <BlogText>
+    &emsp; &emsp; Finally got to see Mount Rushmore! It is way cooler in person and I learned all about how they actually made it. Now 
+    I'm heading down to Wind Cave National Park!
+    </BlogText>
+    <BlogImageWrapper>
+        <BlogImage src= {img60}/>
+        <BlogImage src= {img61}/>
+        <BlogImage src= {img62}/>
+        <BlogImage src= {img63}/>
+    </BlogImageWrapper>
+</BlogPost>
+
+
+
+import img70 from '../../../../assets/img/rockymountains/IMG_0829.jpeg'
+import img71 from '../../../../assets/img/rockymountains/IMG_0834.jpeg'
+import img72 from '../../../../assets/img/rockymountains/IMG_0836.jpeg'
+import img73 from '../../../../assets/img/rockymountains/IMG_0848.jpeg'
+import img74 from '../../../../assets/img/rockymountains/IMG_2471.jpeg'
+import img75 from '../../../../assets/img/rockymountains/IMG_2476.jpeg'
+import img76 from '../../../../assets/img/rockymountains/IMG_2479.jpeg'
+import img77 from '../../../../assets/img/rockymountains/IMG_2484.jpeg'
+
+
+export const rockymountains = 
+<BlogPost>
+    <BlogHeader>
+    Rocky Mountains National Park
+    </BlogHeader>
+    <BlogText>
+    &emsp; &emsp; Rocky Mountain National Park is one of the best so far. Hiking 1,400 feet up and a distance of 6 miles was well worth it.
+    I had the top of Deer Mountain all to myself for about 20 minutes. Next up is Great Sand Dunes National Park!
+    </BlogText>
+    <BlogImageWrapper>
+        <BlogImage src= {img70}/>
+        <BlogImage src= {img71}/>
+        <BlogImage src= {img72}/>
+        <BlogImage src= {img73}/>
+        <BlogImage src= {img74}/>
+        <BlogImage src= {img75}/>
+        <BlogImage src= {img76}/>
+        <BlogImage src= {img77}/>
+    </BlogImageWrapper>
+</BlogPost>

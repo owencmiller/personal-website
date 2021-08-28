@@ -47,6 +47,7 @@ export const BlogNav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     padding: 1em 2em;
     margin-top: 1em;
@@ -60,7 +61,7 @@ export const BlogNav = styled.div`
 export const BlogNavLink = styled.button`
     background-color: white;
     border: white;
-    padding: 0em 3em;
+    padding: .75em 1em;
     font-size: 1.25em;
     color: grey;
     text-decoration: underline;

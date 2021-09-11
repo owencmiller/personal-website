@@ -267,3 +267,49 @@ export const rockymountains =
         <BlogImage src= {img77}/>
     </BlogImageWrapper>
 </BlogPost>
+
+
+
+
+import img80 from '../../../../assets/img/big5/IMG_0995.jpeg'
+import img81 from '../../../../assets/img/big5/IMG_1011.jpeg'
+import img82 from '../../../../assets/img/big5/IMG_1060.jpeg'
+import img83 from '../../../../assets/img/big5/IMG_1077.jpeg'
+import img84 from '../../../../assets/img/big5/IMG_1147.jpeg'
+import img85 from '../../../../assets/img/big5/IMG_1149.jpeg'
+import img86 from '../../../../assets/img/big5/IMG_1166.jpeg'
+import img87 from '../../../../assets/img/big5/IMG_1173.jpeg'
+import img88 from '../../../../assets/img/big5/IMG_1186.jpeg'
+import img89 from '../../../../assets/img/big5/IMG_1212.jpeg'
+import img810 from '../../../../assets/img/big5/IMG_1252.jpeg'
+import img811 from '../../../../assets/img/big5/IMG_1308.jpeg'
+import img812 from '../../../../assets/img/big5/IMG_1347.jpeg'
+
+
+
+export const big5 = 
+<BlogPost>
+    <BlogHeader>
+    Big 5 - Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion
+    </BlogHeader>
+    <BlogText>
+    &emsp; &emsp; Visited the "Big 5" National Parks in Utah: Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion National Parks. They were all
+     stunning but Bryce anf Zion were by far my favorite.
+    </BlogText>
+    <BlogImageWrapper>
+        <BlogImage src= {img80}/>
+        <BlogImage src= {img81}/>
+        <BlogImage src= {img82}/>
+        <BlogImage src= {img83}/>
+        <BlogImage src= {img84}/>
+        <BlogImage src= {img85}/>
+        <BlogImage src= {img86}/>
+        <BlogImage src= {img87}/>
+        <BlogImage src= {img88}/>
+        <BlogImage src= {img89}/>
+        <BlogImage src= {img810}/>
+        <BlogImage src= {img811}/>
+        <BlogImage src= {img812}/>
+
+    </BlogImageWrapper>
+</BlogPost>

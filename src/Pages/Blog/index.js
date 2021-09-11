@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import NavBar from '../../components/NavBar'
 import {BasicPage} from '../BasicPage/styles'
-import {acadia, badlands, cuyahoga, indianadunes, rockymountains, rushmore, theodore, voyaguer} from './BlogPosts/posts'
+import {acadia, badlands, big5, cuyahoga, indianadunes, rockymountains, rushmore, theodore, voyaguer} from './BlogPosts/posts'
 import { BlogNav, BlogNavLink } from './styles';
 
-const posts = [acadia, cuyahoga, indianadunes, voyaguer, theodore, badlands, rushmore, rockymountains]
+const posts = [acadia, cuyahoga, indianadunes, voyaguer, theodore, badlands, rushmore, rockymountains, big5]
 
 function Blog (props){
     const [page, setPage] = useState(0)
@@ -36,6 +36,9 @@ function Blog (props){
                 </BlogNavLink>
                 <BlogNavLink onClick={() => setPage(7)}>
                     Rocky Mountains
+                </BlogNavLink>
+                <BlogNavLink onClick={() => setPage(8)}>
+                    Big 5
                 </BlogNavLink>
             </BlogNav>
             {posts[page]}

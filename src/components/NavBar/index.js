@@ -22,9 +22,9 @@ function NavBar(props){
                         TIDBITS
                     </NavLinkStyled>
                 </Link>
-                <Link to="/blog">
+                <Link to="/travel">
                     <NavLinkStyled>
-                        BLOG
+                        TRAVEL
                     </NavLinkStyled>
                 </Link>
             </NavPagesStyled>

@@ -8,7 +8,7 @@ import {
 import { Background}  from './components/Background';
 import Home from './Pages/Home';
 import Tidbits from './Pages/Tidbits';
-import Blog from './Pages/Blog';
+import Travel from './Pages/Travel';
 import NavBar from './components/NavBar';
 
 class App extends React.Component {
@@ -16,7 +16,7 @@ class App extends React.Component {
     return(
       <Router>
         <Routes>
-          <Route path="/blog" element={<Blog />}/>
+          <Route path="/travel" element={<Travel />}/>
           <Route path="/tidbits" element={<Tidbits />}/>
           <Route path="/" element={<Home />} />
         </Routes>

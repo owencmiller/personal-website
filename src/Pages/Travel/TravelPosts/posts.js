@@ -1,5 +1,5 @@
 import React from 'react';
-import {BlogHeader, BlogImage, BlogText, BlogImageWrapper, BlogPost} from '../styles'
+import {TravelHeader, TravelImage, TravelText, TravelImageWrapper, TravelPost} from '../styles'
 
 // TODO - clean up image imports
 import img1 from '../../../../assets/img/acadia/IMG_0004.JPG'
@@ -14,26 +14,26 @@ import img9 from '../../../../assets/img/acadia/IMG_0116.JPG'
 
 
 export const acadia = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Acadia National Park
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; First stop is Acadia National Park in Maine! Great hiking, awesome views, and I'm learning a lot about living in a van. So 
     far the hardest parts have been finding a place to park and dealing with smelly hiking shoes. Nonetheless, so far so good!
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img4}/>
-        <BlogImage src= {img1}/>
-        <BlogImage src= {img2}/>
-        <BlogImage src= {img3}/>
-        <BlogImage src= {img5}/>
-        <BlogImage src= {img6}/>
-        <BlogImage src= {img7}/>
-        <BlogImage src= {img8}/>
-        <BlogImage style={{maxWidth: "70%"}} src= {img9}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img4}/>
+        <TravelImage src= {img1}/>
+        <TravelImage src= {img2}/>
+        <TravelImage src= {img3}/>
+        <TravelImage src= {img5}/>
+        <TravelImage src= {img6}/>
+        <TravelImage src= {img7}/>
+        <TravelImage src= {img8}/>
+        <TravelImage style={{maxWidth: "70%"}} src= {img9}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 import img10 from '../../../../assets/img/cuyahoga/IMG_0305.JPG'
 import img11 from '../../../../assets/img/cuyahoga/IMG_0324.JPG'
@@ -47,26 +47,26 @@ import img18 from '../../../../assets/img/cuyahoga/IMG_0395.JPG'
 
 
 export const cuyahoga = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Cuyahoga Valley National Park
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; Second stop was Cuyahoga Valley National Park in Ohio! More good hiking and some interesting history. There was a beautiful stream 
     with only an couple of inches of water running through it which made the classic "babbling brook" sound. Two parks down and a lot more to go!
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img10}/>
-        <BlogImage src= {img11}/>
-        <BlogImage src= {img12}/>
-        <BlogImage src= {img17}/>
-        <BlogImage src= {img15}/>
-        <BlogImage src= {img16}/>
-        <BlogImage src= {img18}/>
-        <BlogImage src= {img13}/>
-        <BlogImage style={{maxWidth: "70%"}} src= {img14}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img10}/>
+        <TravelImage src= {img11}/>
+        <TravelImage src= {img12}/>
+        <TravelImage src= {img17}/>
+        <TravelImage src= {img15}/>
+        <TravelImage src= {img16}/>
+        <TravelImage src= {img18}/>
+        <TravelImage src= {img13}/>
+        <TravelImage style={{maxWidth: "70%"}} src= {img14}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 
 import img20 from '../../../../assets/img/indianadunes/IMG_0399.jpeg'
@@ -83,27 +83,27 @@ import img29 from '../../../../assets/img/indianadunes/IMG_0452.jpeg'
 
 
 export const indianadunes = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Indiana Dunes National Park
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; Third stop was Indiana Dunes National Park! About an hour hike out to a beautiful quiet beach on Lake Michigan was totally worth it.
     The 90 degree heat made the trek difficult, but I learned a lot about the biomes in the area and that reapplying sunblock is essential.
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img20}/>
-        <BlogImage src= {img21}/>
-        <BlogImage src= {img22}/>
-        <BlogImage src= {img29}/>
-        <BlogImage src= {img24}/>
-        <BlogImage src= {img25}/>
-        <BlogImage src= {img26}/>
-        <BlogImage src= {img27}/>
-        <BlogImage src= {img28}/>
-        <BlogImage src= {img23}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img20}/>
+        <TravelImage src= {img21}/>
+        <TravelImage src= {img22}/>
+        <TravelImage src= {img29}/>
+        <TravelImage src= {img24}/>
+        <TravelImage src= {img25}/>
+        <TravelImage src= {img26}/>
+        <TravelImage src= {img27}/>
+        <TravelImage src= {img28}/>
+        <TravelImage src= {img23}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 
 import img30 from '../../../../assets/img/voyaguer/IMG_0516.jpeg'
@@ -115,23 +115,23 @@ import img34 from '../../../../assets/img/voyaguer/IMG_0535.jpeg'
 
 
 export const voyaguer = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Voyaguer National Park
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; My fourth stop was Voyaguer National Park up in Northern Minnesota! The park was massive and had some amazing hiking. I met a couple who 
     also lived in their van and they gave me plenty of great tips! I didn't bring my camera on my long hike becuase I wanted to just enjoy the park, 
     so there aren't many photos from this park. Nonetheless, I'm now off to North Dakota!
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img30}/>
-        <BlogImage src= {img31}/>
-        <BlogImage src= {img32}/>
-        <BlogImage src= {img33}/>
-        <BlogImage src= {img34}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img30}/>
+        <TravelImage src= {img31}/>
+        <TravelImage src= {img32}/>
+        <TravelImage src= {img33}/>
+        <TravelImage src= {img34}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 
 
@@ -153,29 +153,29 @@ import img411 from '../../../../assets/img/theodoreroosevelt/IMG_0696.jpeg'
 
 
 export const theodore = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Theodore Roosevelt National Park
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; Theodore Roosevelt National Park has been my favorite park so far. The rolling hills, ancient riverbed, and incredible wildlife
     has made this trip more than memorable. 
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img40}/>
-        <BlogImage src= {img41}/>
-        <BlogImage src= {img42}/>
-        <BlogImage src= {img43}/>
-        <BlogImage src= {img44}/>
-        <BlogImage src= {img45}/>
-        <BlogImage src= {img46}/>
-        <BlogImage src= {img47}/>
-        <BlogImage src= {img48}/>
-        <BlogImage src= {img49}/>
-        <BlogImage src= {img410}/>
-        <BlogImage src= {img411}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img40}/>
+        <TravelImage src= {img41}/>
+        <TravelImage src= {img42}/>
+        <TravelImage src= {img43}/>
+        <TravelImage src= {img44}/>
+        <TravelImage src= {img45}/>
+        <TravelImage src= {img46}/>
+        <TravelImage src= {img47}/>
+        <TravelImage src= {img48}/>
+        <TravelImage src= {img49}/>
+        <TravelImage src= {img410}/>
+        <TravelImage src= {img411}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 
 
@@ -192,23 +192,23 @@ import img59 from '../../../../assets/img/badlands/IMG_0784.jpeg'
 
 
 export const badlands = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Badlands National Park
-    </BlogHeader>
-    <BlogImageWrapper>
-        <BlogImage src= {img50}/>
-        <BlogImage src= {img51}/>
-        <BlogImage src= {img52}/>
-        <BlogImage src= {img53}/>
-        <BlogImage src= {img54}/>
-        <BlogImage src= {img55}/>
-        <BlogImage src= {img56}/>
-        <BlogImage src= {img57}/>
-        <BlogImage src= {img58}/>
-        <BlogImage src= {img59}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelHeader>
+    <TravelImageWrapper>
+        <TravelImage src= {img50}/>
+        <TravelImage src= {img51}/>
+        <TravelImage src= {img52}/>
+        <TravelImage src= {img53}/>
+        <TravelImage src= {img54}/>
+        <TravelImage src= {img55}/>
+        <TravelImage src= {img56}/>
+        <TravelImage src= {img57}/>
+        <TravelImage src= {img58}/>
+        <TravelImage src= {img59}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 
 
@@ -219,21 +219,21 @@ import img63 from '../../../../assets/img/rushmoore/IMG_0713.jpeg'
 
 
 export const rushmore = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Mount Rushmore National Monument
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; Finally got to see Mount Rushmore! It is way cooler in person and I learned all about how they actually made it. Now 
     I'm heading down to Wind Cave National Park!
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img60}/>
-        <BlogImage src= {img61}/>
-        <BlogImage src= {img62}/>
-        <BlogImage src= {img63}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img60}/>
+        <TravelImage src= {img61}/>
+        <TravelImage src= {img62}/>
+        <TravelImage src= {img63}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 
 
@@ -248,25 +248,25 @@ import img77 from '../../../../assets/img/rockymountains/IMG_2484.jpeg'
 
 
 export const rockymountains = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Rocky Mountains National Park
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; Rocky Mountain National Park is one of the best so far. Hiking 1,400 feet up and a distance of 6 miles was well worth it.
     I had the top of Deer Mountain all to myself for about 20 minutes. Next up is Great Sand Dunes National Park!
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img70}/>
-        <BlogImage src= {img71}/>
-        <BlogImage src= {img72}/>
-        <BlogImage src= {img73}/>
-        <BlogImage src= {img74}/>
-        <BlogImage src= {img75}/>
-        <BlogImage src= {img76}/>
-        <BlogImage src= {img77}/>
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img70}/>
+        <TravelImage src= {img71}/>
+        <TravelImage src= {img72}/>
+        <TravelImage src= {img73}/>
+        <TravelImage src= {img74}/>
+        <TravelImage src= {img75}/>
+        <TravelImage src= {img76}/>
+        <TravelImage src= {img77}/>
+    </TravelImageWrapper>
+</TravelPost>
 
 
 
@@ -288,28 +288,28 @@ import img812 from '../../../../assets/img/big5/IMG_1347.jpeg'
 
 
 export const big5 = 
-<BlogPost>
-    <BlogHeader>
+<TravelPost>
+    <TravelHeader>
     Big 5 - Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion
-    </BlogHeader>
-    <BlogText>
+    </TravelHeader>
+    <TravelText>
     &emsp; &emsp; Visited the "Big 5" National Parks in Utah: Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion National Parks. They were all
      stunning but Bryce anf Zion were by far my favorite.
-    </BlogText>
-    <BlogImageWrapper>
-        <BlogImage src= {img80}/>
-        <BlogImage src= {img81}/>
-        <BlogImage src= {img82}/>
-        <BlogImage src= {img83}/>
-        <BlogImage src= {img84}/>
-        <BlogImage src= {img85}/>
-        <BlogImage src= {img86}/>
-        <BlogImage src= {img87}/>
-        <BlogImage src= {img88}/>
-        <BlogImage src= {img89}/>
-        <BlogImage src= {img810}/>
-        <BlogImage src= {img811}/>
-        <BlogImage src= {img812}/>
+    </TravelText>
+    <TravelImageWrapper>
+        <TravelImage src= {img80}/>
+        <TravelImage src= {img81}/>
+        <TravelImage src= {img82}/>
+        <TravelImage src= {img83}/>
+        <TravelImage src= {img84}/>
+        <TravelImage src= {img85}/>
+        <TravelImage src= {img86}/>
+        <TravelImage src= {img87}/>
+        <TravelImage src= {img88}/>
+        <TravelImage src= {img89}/>
+        <TravelImage src= {img810}/>
+        <TravelImage src= {img811}/>
+        <TravelImage src= {img812}/>
 
-    </BlogImageWrapper>
-</BlogPost>
+    </TravelImageWrapper>
+</TravelPost>

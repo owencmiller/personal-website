@@ -1,7 +1,7 @@
 import React from "react";
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Link
 } from "react-router-dom";
@@ -15,17 +15,11 @@ class App extends React.Component {
   render() {
     return(
       <Router>
-        <Switch>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/tidbits">
-            <Tidbits />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/blog" element={<Blog />}/>
+          <Route path="/tidbits" element={<Tidbits />}/>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </Router>
     );
   }

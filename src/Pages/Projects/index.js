@@ -11,8 +11,8 @@ function Projects (props){
             <NavBar />
             <SideTitle>PROJECTS</SideTitle>
             <ProjectsContainer>
-                <ProjectElement summary="A neural network library written in Golang." link="https://github.com/owencmiller/gonet"> Gonet </ProjectElement>
-                <ProjectElement summary="This personal website / blog written with React." link="https://github.com/owencmiller/personal-website"> Personal website </ProjectElement>
+                <ProjectElement summary="a neural network library written in Golang." link="https://github.com/owencmiller/gonet"> gonet </ProjectElement>
+                <ProjectElement summary="this personal website / blog written with React." link="https://github.com/owencmiller/personal-website"> owenmiller.me </ProjectElement>
             </ProjectsContainer>
         </BasicPage>
     )

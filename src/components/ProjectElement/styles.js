@@ -12,8 +12,7 @@ export const ProjectElementContainer = styled.div`
 
 export const ProjectElementTitle = styled.a`
     font-size: 30px;
-    font-weight: 400;
-    color: #000;
+    color: #4a4a4a;
 
     &:hover{
         text-decoration: underline;

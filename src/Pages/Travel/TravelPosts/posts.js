@@ -294,7 +294,7 @@ export const big5 =
     </TravelHeader>
     <TravelText>
     &emsp; &emsp; Visited the "Big 5" National Parks in Utah: Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion National Parks. They were all
-     stunning but Bryce anf Zion were by far my favorite.
+     stunning but Bryce and Zion were by far my favorite.
     </TravelText>
     <TravelImageWrapper>
         <TravelImage src= {img80}/>

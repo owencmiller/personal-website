@@ -12,6 +12,8 @@ export const TravelPost = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    animation: ${fadeIn} 1s ease;
 `
 
 export const TravelImageWrapper = styled.div`
@@ -56,6 +58,8 @@ export const TravelNav = styled.div`
     border-left: white;
     border-right: white;
     border-style: solid;
+
+    animation: ${slideToBottom} 1s ease;
 `
 
 export const TravelNavLink = styled.button`

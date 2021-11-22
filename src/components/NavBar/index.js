@@ -17,14 +17,19 @@ function NavBar(props){
                 <MainIcon>OM</MainIcon>
             </Link>
             <NavPagesStyled>
-                <Link to="/tidbits">
+                <Link to="/projects">
                     <NavLinkStyled>
-                        TIDBITS
+                        PROJECTS
                     </NavLinkStyled>
                 </Link>
                 <Link to="/travel">
                     <NavLinkStyled>
                         TRAVEL
+                    </NavLinkStyled>
+                </Link>
+                <Link to="/tidbits">
+                    <NavLinkStyled>
+                        TIDBITS
                     </NavLinkStyled>
                 </Link>
             </NavPagesStyled>

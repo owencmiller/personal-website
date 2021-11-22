@@ -1,17 +1,26 @@
 import React from 'react';
-import {TidbitTitle, TidbitsContainer} from './styles'
+import {TidbitContent, TidbitsContainer, TidbitTitle} from './styles'
+import { SideTitle } from '../../components/SideTitle';
 import NavBar from '../../components/NavBar'
-import TidbitElement from '../../components/TidbitElement'
+import ProjectElement from '../../components/ProjectElement'
 import {BasicPage} from '../BasicPage/styles'
 
 function Tidbits (props){
     return (
         <BasicPage>
             <NavBar />
-            <TidbitTitle>TIDBITS</TidbitTitle>
+            <SideTitle>TIDBITS</SideTitle>
             <TidbitsContainer>
-                <TidbitElement summary="A neural network library written in Golang." link="https://github.com/owencmiller/gonet"> Gonet </TidbitElement>
-                <TidbitElement summary="This personal website / blog written with React." link="https://github.com/owencmiller/personal-website"> Personal website </TidbitElement>
+                <TidbitTitle>from: </TidbitTitle>
+                <TidbitContent>philadelphia</TidbitContent>
+                <TidbitTitle>likes: </TidbitTitle>
+                <TidbitContent>hard problems and math</TidbitContent>
+                <TidbitTitle>dislikes: </TidbitTitle>
+                <TidbitContent>olives</TidbitContent>
+                <TidbitTitle>good at: </TidbitTitle>
+                <TidbitContent>code (julia, python, c, java) and asking a lot of questions</TidbitContent>
+                <TidbitTitle>bad at: </TidbitTitle>
+                <TidbitContent>painting and cooking (for now)</TidbitContent>
             </TidbitsContainer>
         </BasicPage>
     )

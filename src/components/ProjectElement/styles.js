@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const TidbitElementContainer = styled.div`
+export const ProjectElementContainer = styled.div`
     border-bottom: 1px solid #dadada;
     padding: 30px 0px;
 
@@ -10,7 +10,7 @@ export const TidbitElementContainer = styled.div`
     justify-content: space-between;
 `
 
-export const TidbitElementTitle = styled.a`
+export const ProjectElementTitle = styled.a`
     font-size: 30px;
     font-weight: 400;
     color: #000;
@@ -20,11 +20,11 @@ export const TidbitElementTitle = styled.a`
     }
 `
 
-export const TidbitElementSummary = styled.p`
+export const ProjectElementSummary = styled.p`
     padding-top: 8px;
 `
 
-export const TidbitElementReadMore = styled.a`
+export const ProjectElementReadMore = styled.a`
     padding-top: 10px;    
 
     &:hover{

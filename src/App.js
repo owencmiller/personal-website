@@ -9,8 +9,8 @@ import { Background}  from './components/Background';
 import Home from './Pages/Home';
 import Projects from './Pages/Projects';
 import Travel from './Pages/Travel';
-import NavBar from './components/NavBar';
 import Tidbits from "./Pages/Tidbits";
+import Blog from './Pages/Blog';
 
 class App extends React.Component {
   render() {
@@ -20,6 +20,7 @@ class App extends React.Component {
           <Route path="/travel" element={<Travel />}/>
           <Route path="/projects" element={<Projects />}/>
           <Route path="/tidbits" element={<Tidbits/>}/>
+          <Route path="/blog" element={<Blog/>}/>
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>

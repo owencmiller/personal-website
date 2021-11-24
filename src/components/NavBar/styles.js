@@ -16,6 +16,7 @@ export const NavBarStyled = styled.div`
 `
 
 export const NavLinkStyled = styled.h4`
+    padding: 0em .75em;
     font: ${contentFont};
     color: #4a4a4a;
     opactiy: 0.7;
@@ -27,8 +28,6 @@ export const NavLinkStyled = styled.h4`
 `
 
 export const NavPagesStyled = styled.div`
-    width: 15em;
-
     display: flex;
     justify-content: space-between;
     align-items: center;

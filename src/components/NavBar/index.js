@@ -32,6 +32,11 @@ function NavBar(props){
                         TIDBITS
                     </NavLinkStyled>
                 </Link>
+                <Link to="/blog">
+                    <NavLinkStyled>
+                        BLOG
+                    </NavLinkStyled>
+                </Link>
             </NavPagesStyled>
         </NavBarStyled>
     )

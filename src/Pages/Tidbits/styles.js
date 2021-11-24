@@ -7,7 +7,45 @@ import {
 } from '../../styles/animations'
 
 
+<<<<<<< HEAD
 export const TidbitsContainer = styled.div`
+=======
+export const TidbitsWrapper = styled.div`
+    min-height: 70vh;
+    width: 100%;
+    padding: 0vh 15vw;
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+`
+
+export const TidbitTitle = styled.h1`
+    top: calc(50% - 100px);
+    left: 15vw;
+
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    
+    position: fixed;
+    
+    font-size: 80px;
+    font-weight: 500;
+
+    animation: ${slideToRight} 1s ease;
+
+    @media (max-width: 700px) {
+        visibility: hidden;
+    }
+    @media (max-height: 500px) {
+        top: 150px;
+    }
+`
+
+export const TidbitsContainer = styled.ul`
+>>>>>>> 91315887820f3b7744b02b2f113a43ac8970685d
 
     padding: 7vh 5vw;
     width: 50%;
@@ -23,6 +61,7 @@ export const TidbitsContainer = styled.div`
     @media (max-height: 550px){
         padding-top: 100px;
     }
+<<<<<<< HEAD
 `
 
 export const TidbitTitle = styled.h1`
@@ -32,4 +71,6 @@ export const TidbitTitle = styled.h1`
 
 export const TidbitContent = styled.h1`
     padding-left: 1.5em;
+=======
+>>>>>>> 91315887820f3b7744b02b2f113a43ac8970685d
 `

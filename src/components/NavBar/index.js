@@ -17,6 +17,7 @@ function NavBar(props){
                 <MainIcon>OM</MainIcon>
             </Link>
             <NavPagesStyled>
+<<<<<<< HEAD
                 <Link to="/projects">
                     <NavLinkStyled>
                         PROJECTS
@@ -30,6 +31,16 @@ function NavBar(props){
                 <Link to="/tidbits">
                     <NavLinkStyled>
                         TIDBITS
+=======
+                <Link to="/tidbits">
+                    <NavLinkStyled>
+                        TIDBITS
+                    </NavLinkStyled>
+                </Link>
+                <Link to="/blog">
+                    <NavLinkStyled>
+                        BLOG
+>>>>>>> 91315887820f3b7744b02b2f113a43ac8970685d
                     </NavLinkStyled>
                 </Link>
             </NavPagesStyled>

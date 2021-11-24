@@ -27,7 +27,11 @@ export const NavLinkStyled = styled.h4`
 `
 
 export const NavPagesStyled = styled.div`
+<<<<<<< HEAD
     width: 15em;
+=======
+    width: 8em;
+>>>>>>> 91315887820f3b7744b02b2f113a43ac8970685d
 
     display: flex;
     justify-content: space-between;

@@ -31,5 +31,5 @@ export const TidbitTitle = styled.h1`
 `
 
 export const TidbitContent = styled.h1`
-    padding-left: 1em;
+    padding-left: 1.5em;
 `

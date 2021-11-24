@@ -3,6 +3,7 @@ import {TidbitTitle, TidbitsContainer} from './styles'
 import NavBar from '../../components/NavBar'
 import TidbitElement from '../../components/TidbitElement'
 import {BasicPage} from '../BasicPage/styles'
+import { SideTitle } from '../../components/SideTitle';
 
 function Tidbits (props){
     return (

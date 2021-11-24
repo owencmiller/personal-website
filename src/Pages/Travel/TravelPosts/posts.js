@@ -2,15 +2,15 @@ import React from 'react';
 import {TravelHeader, TravelImage, TravelText, TravelImageWrapper, TravelPost} from '../styles'
 
 // TODO - clean up image imports
-import img1 from '../../../../assets/img/acadia/IMG_0004.JPG'
-import img2 from '../../../../assets/img/acadia/IMG_0100.JPG'
-import img3 from '../../../../assets/img/acadia/IMG_0123.JPG'
-import img4 from '../../../../assets/img/acadia/IMG_2303.JPG'
-import img5 from '../../../../assets/img/acadia/IMG_0003.JPG'
-import img6 from '../../../../assets/img/acadia/IMG_0021.JPG'
-import img7 from '../../../../assets/img/acadia/IMG_0060.JPG'
-import img8 from '../../../../assets/img/acadia/IMG_0093.JPG'
-import img9 from '../../../../assets/img/acadia/IMG_0116.JPG'
+import img1 from '../../../../assets/img/acadia/IMG_0004.jpeg'
+import img2 from '../../../../assets/img/acadia/IMG_0100.jpeg'
+import img3 from '../../../../assets/img/acadia/IMG_0123.jpeg'
+import img4 from '../../../../assets/img/acadia/IMG_2303.jpeg'
+import img5 from '../../../../assets/img/acadia/IMG_0003.jpeg'
+import img6 from '../../../../assets/img/acadia/IMG_0021.jpeg'
+import img7 from '../../../../assets/img/acadia/IMG_0060.jpeg'
+import img8 from '../../../../assets/img/acadia/IMG_0093.jpeg'
+import img9 from '../../../../assets/img/acadia/IMG_0116.jpeg'
 
 
 export const acadia = 
@@ -35,15 +35,15 @@ export const acadia =
     </TravelImageWrapper>
 </TravelPost>
 
-import img10 from '../../../../assets/img/cuyahoga/IMG_0305.JPG'
-import img11 from '../../../../assets/img/cuyahoga/IMG_0324.JPG'
-import img12 from '../../../../assets/img/cuyahoga/IMG_0331.JPG'
-import img13 from '../../../../assets/img/cuyahoga/IMG_0336.JPG'
-import img14 from '../../../../assets/img/cuyahoga/IMG_0347.JPG'
-import img15 from '../../../../assets/img/cuyahoga/IMG_0361.JPG'
-import img16 from '../../../../assets/img/cuyahoga/IMG_0372.JPG'
-import img17 from '../../../../assets/img/cuyahoga/IMG_0383.JPG'
-import img18 from '../../../../assets/img/cuyahoga/IMG_0395.JPG'
+import img10 from '../../../../assets/img/cuyahoga/IMG_0305.jpeg'
+import img11 from '../../../../assets/img/cuyahoga/IMG_0324.jpeg'
+import img12 from '../../../../assets/img/cuyahoga/IMG_0331.jpeg'
+import img13 from '../../../../assets/img/cuyahoga/IMG_0336.jpeg'
+import img14 from '../../../../assets/img/cuyahoga/IMG_0347.jpeg'
+import img15 from '../../../../assets/img/cuyahoga/IMG_0361.jpeg'
+import img16 from '../../../../assets/img/cuyahoga/IMG_0372.jpeg'
+import img17 from '../../../../assets/img/cuyahoga/IMG_0383.jpeg'
+import img18 from '../../../../assets/img/cuyahoga/IMG_0395.jpeg'
 
 
 export const cuyahoga = 

@@ -12,7 +12,9 @@ export const TidbitTitle = styled.h1`
 `
 
 export const TidbitContent = styled.p`
-    padding-left: 1.5em;
+    padding-left: 2em;
+    padding-top: .25em;
+    padding-bottom: .5em;
 `
 
 export const TidbitsContainer = styled.ul`

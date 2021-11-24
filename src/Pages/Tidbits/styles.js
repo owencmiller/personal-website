@@ -7,9 +7,6 @@ import {
 } from '../../styles/animations'
 
 
-<<<<<<< HEAD
-export const TidbitsContainer = styled.div`
-=======
 export const TidbitsWrapper = styled.div`
     min-height: 70vh;
     width: 100%;
@@ -45,7 +42,6 @@ export const TidbitTitle = styled.h1`
 `
 
 export const TidbitsContainer = styled.ul`
->>>>>>> 91315887820f3b7744b02b2f113a43ac8970685d
 
     padding: 7vh 5vw;
     width: 50%;
@@ -61,16 +57,4 @@ export const TidbitsContainer = styled.ul`
     @media (max-height: 550px){
         padding-top: 100px;
     }
-<<<<<<< HEAD
-`
-
-export const TidbitTitle = styled.h1`
-    font-weight: bolder;
-    padding-top: 1em;
-`
-
-export const TidbitContent = styled.h1`
-    padding-left: 1.5em;
-=======
->>>>>>> 91315887820f3b7744b02b2f113a43ac8970685d
 `

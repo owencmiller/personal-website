@@ -9,6 +9,7 @@ export const NavBarStyled = styled.div`
     height: 140px;
 
     padding: 0vh 15vw;
+    flex: 0 0 140px;
 
     display: flex;
     justify-content: space-between;

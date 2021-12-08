@@ -1,11 +1,13 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import {
     slideToRight
 } from '../../styles/animations'
 
-export const SideTitle = styled.h1`
+const SideTitleStyled = styled.h1`
     top: calc(50% - 150px);
-    left: 15vw;
+    left: 8vw;
 
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
@@ -14,6 +16,7 @@ export const SideTitle = styled.h1`
     
     font-size: 80px;
     font-weight: 500;
+    color: black;
 
     animation: ${slideToRight} 1s ease;
 
@@ -24,3 +27,15 @@ export const SideTitle = styled.h1`
         top: 150px;
     }
 `
+
+function SideTitle(props){
+    return(
+        <Link to={"/" + props.link}>
+            <SideTitleStyled>
+                {props.title}
+            </SideTitleStyled>
+        </Link>
+    )
+}
+
+export default SideTitle;

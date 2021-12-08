@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import p5 from 'p5'
 
 
-class P5test extends React.Component {
+class Dots1 extends React.Component {
     constructor(props) {
         super(props);
         this.myRef = React.createRef();
@@ -21,6 +21,7 @@ class P5test extends React.Component {
         }
 
         p.draw = () => {
+            
             p.fill('red');
             p.circle(this.state.canvasWidth/2,this.state.canvasHeight/2,this.state.canvasWidth/3);
         }
@@ -37,4 +38,4 @@ class P5test extends React.Component {
     }
 }
 
-export default P5test;
+export default Dots1;

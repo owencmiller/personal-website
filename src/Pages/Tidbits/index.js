@@ -2,13 +2,13 @@ import React from 'react';
 import {TidbitContent, TidbitTitle, TidbitsContainer} from './styles'
 import NavBar from '../../components/NavBar'
 import {BasicPage} from '../BasicPage/styles'
-import { SideTitle } from '../../components/SideTitle';
+import SideTitle from '../../components/SideTitle';
 
 function Tidbits (props){
     return (
         <BasicPage>
             <NavBar />
-            <SideTitle>TIDBITS</SideTitle>
+            <SideTitle link="tidbits" title="TODBITS"/>
             <TidbitsContainer>
                 <TidbitTitle>from: </TidbitTitle>
                 <TidbitContent>philadelphia</TidbitContent>

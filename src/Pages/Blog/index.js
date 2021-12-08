@@ -1,20 +1,25 @@
 import React from 'react';
-import { SideTitle } from '../../components/SideTitle';
+import SideTitle from '../../components/SideTitle';
+import { useParams } from 'react-router';
 import NavBar from '../../components/NavBar'
-import {BasicPage} from '../BasicPage/styles'
-import { visible_posts } from './BlogPosts';
-import P5test from './BlogPosts/1/p5test';
-
+import { BasicPage } from '../BasicPage/styles'
+import { get_archive, visible_posts } from './BlogPosts';
+import { BlogPost } from './styles';
+import { build_post_blurb, build_post} from './BlogPosts';
 
 
 function Blog (props){
+    blog_num = useParams();
+    if(Object.keys(blog_num).length === 0){
+        visible = get_archive()
+    }else{
+        visible = <BlogPost>{build_post(visible_posts[blog_num.id-1])}</BlogPost>
+    }
     return (
         <BasicPage>
             <NavBar />
-            <SideTitle>BLOG</SideTitle>
-            {visible_posts.map(post => (
-                <div>{post}</div>
-            ))}
+            <SideTitle link={"blog"} title={"BLOG"}/>
+            {visible}
         </BasicPage>
     )
 }

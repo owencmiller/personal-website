@@ -7,6 +7,6 @@ import {
 } from '../../styles/animations'
 
 
-export const BlogContainer = styled.ul`
-
+export const BlogPost = styled.div`
+    width: 50%;
 `

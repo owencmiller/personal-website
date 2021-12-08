@@ -7,7 +7,7 @@ export const Archive = styled.ul`
 
 export const ArchiveTitle = styled.h1`
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: 300;
 `
 
 export const Blurb = styled.li`

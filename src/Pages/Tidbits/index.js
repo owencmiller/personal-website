@@ -8,7 +8,7 @@ function Tidbits (props){
     return (
         <BasicPage>
             <NavBar />
-            <SideTitle link="tidbits" title="TODBITS"/>
+            <SideTitle link="tidbits" title="TIDBITS"/>
             <TidbitsContainer>
                 <TidbitTitle>from: </TidbitTitle>
                 <TidbitContent>philadelphia</TidbitContent>

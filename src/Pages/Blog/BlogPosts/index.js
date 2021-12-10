@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import {Link} from 'react-router-dom';
 import { Archive, ArchiveTitle, Blurb, BlurbTitle, BlurbDate, BlurbSummary } from "./styles";
 import { post1 } from "./1"
+import { post2 } from "./2";
 
 const Center = styled.div`
     display: flex;
@@ -54,5 +55,6 @@ export function get_archive(){
 
 
 export const visible_posts = [
-    post1
+    post1,
+    post2
 ]

@@ -12,6 +12,7 @@ export const ArchiveTitle = styled.h1`
 
 export const Blurb = styled.li`
     color: gray;
+    margin: 20px 0px;
 `
 
 export const BlurbTitle = styled.h1`

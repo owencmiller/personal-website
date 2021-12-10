@@ -6,8 +6,8 @@ import {
 } from '../../styles/animations'
 
 const SideTitleStyled = styled.h1`
-    top: calc(50% - 170px);
     left: 9vw;
+    height: 73%;
 
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
@@ -18,6 +18,9 @@ const SideTitleStyled = styled.h1`
     font-weight: 700;
     letter-spacing: 20px;
     color: #4a4a4a;
+
+    display: flex;
+    justify-content: center;
 
     animation: ${slideToRight} 1s ease;
 

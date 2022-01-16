@@ -8,7 +8,7 @@ export const NavBarStyled = styled.div`
     width: 100%;
     height: 140px;
 
-    padding: 0vh 15vw;
+    padding: 0vh 20vw;
     flex: 0 0 140px;
 
     display: flex;

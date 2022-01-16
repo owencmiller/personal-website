@@ -3,7 +3,7 @@ import Dots1 from "./Dots1"
 export const post2 = {
     id: 2,
     title: "Exploring Dots and Boxes",
-    date: "Dec 7, 2021",
+    date: "Dec 07, 2021",
     summary: "Exploring the classic pen & paper game: Dots and Boxes. We look at the rules, complexity, strategies, and problems of a timeless abstract game.",
     content: [
         "The standard format of dots and boxes",

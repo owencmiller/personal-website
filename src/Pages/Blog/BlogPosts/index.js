@@ -34,9 +34,8 @@ function build_post_blurb(post){
     return(
         <Link to={"/blog/"+post.id}>
             <Blurb>
-                <BlurbTitle>{post.title}</BlurbTitle>
                 <BlurbDate>{post.date}</BlurbDate>
-                <BlurbSummary>{post.summary}</BlurbSummary>
+                <BlurbTitle>{post.title}</BlurbTitle>
             </Blurb>
         </Link>
     )
@@ -55,6 +54,6 @@ export function get_archive(){
 
 
 export const visible_posts = [
-    post1,
-    post2
+    post2,
+    post1
 ]

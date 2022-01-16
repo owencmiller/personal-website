@@ -6,7 +6,7 @@ import {
 } from '../../styles/animations'
 
 const SideTitleStyled = styled.h1`
-    left: 9vw;
+    left: 12vw;
     height: 73%;
 
     writing-mode: vertical-lr;

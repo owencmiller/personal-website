@@ -15,7 +15,7 @@ const SideTitleStyled = styled.h1`
     position: fixed;
     
     font-size: 80px;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: 20px;
     color: #4a4a4a;
 

@@ -37,6 +37,7 @@ export const NavPagesStyled = styled.div`
 export const MainIcon = styled.h1`
     font-family: ${iconFont};
     font-size: 50px;
+    font-weight: 200;
 
     color: #000;
 `

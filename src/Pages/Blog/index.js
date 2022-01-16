@@ -13,12 +13,12 @@ function Blog (props){
     if(Object.keys(blog_num).length === 0){
         visible = get_archive()
     }else{
-        visible = <BlogPost>{build_post(visible_posts[blog_num.id-1])}</BlogPost>
+        visible = <BlogPost>{build_post([...visible_posts].reverse()[blog_num.id-1])}</BlogPost>
     }
     return (
         <BasicPage>
             <NavBar />
-            <SideTitle link={"blog"} title={"BLOG"}/>
+            {/* <SideTitle link={"blog"} title={"BLOG"}/> */}
             {visible}
         </BasicPage>
     )

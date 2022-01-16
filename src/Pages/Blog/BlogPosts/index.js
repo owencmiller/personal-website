@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { v4 as uuidv4 } from 'uuid';
 import {Link} from 'react-router-dom';
-import { Archive, ArchiveTitle, Blurb, BlurbTitle, BlurbDate } from "./styles";
+import { Archive, ArchiveTitle, Blurb, BlurbTitle, BlurbDate, PostTitle, PostDate, PostPara } from "./styles";
 import { post1 } from "./1"
 import { post2 } from "./2";
 
@@ -13,7 +13,7 @@ const Center = styled.div`
 // TODO: add unique key props to items
 function wrap(content){
     if (typeof(content) == 'string'){
-        return <p>{content}</p>
+        return <PostPara>{content}</PostPara>
     }
     return <Center>{content}</Center>
 }
@@ -21,8 +21,8 @@ function wrap(content){
 export function build_post(post){
     return(
         <div>
-            <h1>{post.title}</h1>
-            <h3>{post.date}</h3>
+            <PostTitle>{post.title}</PostTitle>
+            <PostDate>{post.date}</PostDate>
             {post.content.map(x => (
                 wrap(x)
             ))}

@@ -8,6 +8,7 @@ import {
 
 
 export const BlogPost = styled.div`
-    width: 60%;
+    width: 50%;
+    min-width: 35em;
     padding: 6vh 0vw;
 `

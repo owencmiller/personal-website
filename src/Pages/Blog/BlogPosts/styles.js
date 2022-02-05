@@ -43,4 +43,7 @@ export const PostDate = styled.h1`
 export const PostPara = styled.p`
     font-family: ${iconFont};
     font-size: 20px;
+    text-indent: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 `

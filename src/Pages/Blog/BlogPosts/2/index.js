@@ -1,13 +1,12 @@
-import Dots1 from "./Dots1"
-
 export const post2 = {
     id: 2,
-    title: "Exploring Dots and Boxes",
-    date: "Dec 07, 2021",
-    summary: "Exploring the classic pen & paper game: Dots and Boxes. We look at the rules, complexity, strategies, and problems of a timeless abstract game.",
+    title: "List of Questions",
+    date: "Jan 28, 2022",
+    summary: "List of all the weird questions I have.",
     content: [
-        "The standard format of dots and boxes",
-        <Dots1/>,
-        "The previous react component is testing if p5 components are working. You should see a red circle."
+        "I'm keep a list of all my questions. Feel free to contact me with any answers or resources.",
+        "1. How do we know what atoms are in molecules? And how they are connected?",
+        "2. How do we know the shape of molecules?",
+        "3. What is the probability of winning a TicTacToe game if your opponent has an equal chance of placing their piece in any open position?", 
     ]
 }

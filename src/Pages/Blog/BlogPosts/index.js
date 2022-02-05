@@ -13,7 +13,7 @@ const Center = styled.div`
 // TODO: add unique key props to items
 function wrap(content){
     if (typeof(content) == 'string'){
-        return <PostPara>{content}</PostPara>
+        return <PostPara>{'\t' + content}</PostPara>
     }
     return <Center>{content}</Center>
 }

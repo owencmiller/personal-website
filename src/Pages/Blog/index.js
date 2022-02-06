@@ -9,7 +9,8 @@ import { build_post_blurb, build_post} from './BlogPosts';
 
 
 function Blog (props){
-    blog_num = useParams();
+    let blog_num = useParams();
+    console.log("Blog Number: ", blog_num)
     if(Object.keys(blog_num).length === 0){
         visible = get_archive()
     }else{

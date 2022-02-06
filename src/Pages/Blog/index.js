@@ -12,9 +12,9 @@ function Blog (props){
     let blog_num = useParams();
     console.log("Blog Number: ", blog_num)
     if(Object.keys(blog_num).length === 0){
-        visible = get_archive()
+        let visible = get_archive()
     }else{
-        visible = <BlogPost>{build_post([...visible_posts].reverse()[blog_num.id-1])}</BlogPost>
+        let visible = <BlogPost>{build_post([...visible_posts].reverse()[blog_num.id-1])}</BlogPost>
     }
     return (
         <BasicPage>

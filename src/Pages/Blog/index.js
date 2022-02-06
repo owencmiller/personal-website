@@ -11,10 +11,11 @@ import { build_post_blurb, build_post} from './BlogPosts';
 function Blog (props){
     let blog_num = useParams();
     console.log("Blog Number: ", blog_num)
+    let visible = null;
     if(Object.keys(blog_num).length === 0){
-        let visible = get_archive()
+        visible = get_archive()
     }else{
-        let visible = <BlogPost>{build_post([...visible_posts].reverse()[blog_num.id-1])}</BlogPost>
+        visible = <BlogPost>{build_post([...visible_posts].reverse()[blog_num.id-1])}</BlogPost>
     }
     return (
         <BasicPage>

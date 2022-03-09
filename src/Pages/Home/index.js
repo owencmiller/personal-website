@@ -28,9 +28,6 @@ function Home (props){
                 <NameStyled>Owen Miller</NameStyled>
                 <DescriptionStyled>Fullstack / Data Engineer and Leader<a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' style={{color:'white'}}>.</a></DescriptionStyled>
                 <SocialNetworkStyled>
-                    <SocialMedia link="https://twitter.com/owen_c_miller" type="twitter">
-                        owen_c_miller
-                    </SocialMedia>
                     <SocialMedia link="https://github.com/owencmiller" type="github">
                         owencmiller
                     </SocialMedia>

@@ -3,10 +3,10 @@ import {contentFont} from '../../styles/fonts'
 
 export const BasicPage = styled.div`
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
 
     font-family: ${contentFont};
     margin: 0;

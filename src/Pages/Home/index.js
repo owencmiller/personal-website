@@ -43,8 +43,8 @@ function Home (props){
                 <ResumeSection>About</ResumeSection>
                 <ResumeData>&mdash; Data focused fullstack software engineer.</ResumeData>
                 <ResumeData>&mdash; Experience with AWS, CI/CD, JIRA, Jenkins, and React.</ResumeData>
-                <ResumeData>&mdash; Have used Python, Julia, Java, and JavaScript</ResumeData>
-                <ResumeData>&mdash; Traveled across the USA for 5 months.</ResumeData>
+                <ResumeData>&mdash; Have used Python, Julia, Java, and JavaScript.</ResumeData>
+                <ResumeData>&mdash; Traveled across the USA for 5 months seeing 32 national parks.</ResumeData>
                 
                 <ResumeSection>Experience</ResumeSection>
                 <ResumeItem>Software Engineering Intern &mdash; Intuit</ResumeItem>
@@ -58,7 +58,7 @@ function Home (props){
                 <ResumeData>&mdash; Worked with alumni from FAANG companies to help undergraduates gain important skills and knowledge applicable to the modern workforce.</ResumeData>
                 <ResumeData>&mdash; Managed a full migration to remote culture in light of the recent pandemic.</ResumeData>
                 <ResumeData>&mdash; Collaborated with university administration on cultural evolution and progressing the organization toward greater diversity and inclusion.</ResumeData>
-                <ResumeItem>Go Club Member &mdash; RIT</ResumeItem>
+                <ResumeItem>Go (Baduk) Club Member &mdash; RIT</ResumeItem>
                 <ResumeData>&mdash; Gained long term strategy skills from stronger players.</ResumeData>
                 <ResumeData>&mdash; "Trade plums for peaches but not gold for silver." - Go Proverb</ResumeData>
                 <ResumeItem>AI Club Member &mdash; RIT</ResumeItem>

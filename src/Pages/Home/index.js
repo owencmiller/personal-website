@@ -65,7 +65,7 @@ function Home (props){
                 <ResumeData>Primary university administrative liaison driving cultural evolution and progressing the organization toward greater diversity and inclusion during a difficult time.</ResumeData>
                 
                 <ResumeItem>Go (Baduk) Club Member &mdash; RIT</ResumeItem>
-                <ResumeData>Gained long term strategy skills from stronger players.</ResumeData>
+                <ResumeData>Gained long term strategy skills from stronger players. I love the game.</ResumeData>
                 <ResumeData>"Trade plums for peaches but not gold for silver." - Go Proverb</ResumeData>
                 
                 <ResumeItem>AI Club Member &mdash; RIT</ResumeItem>

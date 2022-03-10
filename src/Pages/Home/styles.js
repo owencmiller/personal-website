@@ -11,7 +11,7 @@ import { titleFont, contentFon, iconFont } from '../../styles/fonts'
 
 
 export const Info = styled.div`
-  width: 45%;
+  width: 33%;
   top: calc(50% - 200px);
   position: fixed;
   padding: 20px;
@@ -36,7 +36,7 @@ export const Name = styled.h1`
   margin: 0;
   font-family: ${titleFont};
   font-weight: 200;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 1;
   animation: ${scaleIn} 1s ease;
 
@@ -55,7 +55,7 @@ export const Description = styled.h3`
 export const SocialNetwork = styled.div`
   > a {
     margin: 0 .5em;
-    animation: ${scaleIn} 1s ease;
+    animation: ${fadeIn} 1s ease;
     &:first-child {
       margin-left: 0
     }
@@ -67,8 +67,8 @@ export const SocialNetwork = styled.div`
 
 
 export const Resume = styled.div`
-  width: 55%;
-  left: 45%;
+  width: 66%;
+  left: 35%;
   padding: 60px 0px;
 
   display: flex;
@@ -87,15 +87,14 @@ export const ResumeItem = styled.h2`
   font-family: ${iconFont};
   font-size: 20px;
   font-weight: 700;
-  padding: 1vh 2em;
+  padding: 1vh 0px;
   animation: ${slideToLeft} 1s ease;
 `
 export const ResumeData = styled.p`
   font-family: ${iconFont};
   font-size: 18px;
-  padding: 5px 80px;
+  padding: 5px 50px;
   animation: ${slideToLeft} 1s ease;
-
 `
 
 export default {}

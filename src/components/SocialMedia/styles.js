@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { slideToTop } from '../../styles/animations'
 import { contentFont } from '../../styles/fonts'
 
 export const SocialButton = styled.a`
@@ -17,6 +18,7 @@ export const SocialButton = styled.a`
     margin-right: .1em;
     font-size: 1.75em;
   }
+  animation: ${slideToTop} 1s ease;
 `
 
 export const ButtonText = styled.span`

@@ -6,7 +6,7 @@ import {
 
 function SocialMedia (props) {
   return (
-    <SocialButtonStyled href={props.link}>
+    <SocialButtonStyled href={props.link} target="_blank" rel="noopener noreferrer">
       <i className={`fa fa-${props.type}`}/>
       <ButtonTextStyled>{props.children}</ButtonTextStyled>
     </SocialButtonStyled>

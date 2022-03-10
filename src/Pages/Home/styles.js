@@ -69,7 +69,7 @@ export const SocialNetwork = styled.div`
 export const Resume = styled.div`
   width: 66%;
   left: 35%;
-  padding: 60px 0px;
+  padding: 30px 0px;
 
   display: flex;
   flex-direction: column;

@@ -22,6 +22,13 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width:500px) {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    padding-top: 50px;
+  }
 `
 
 export const ProfilePic = styled.img`
@@ -74,6 +81,15 @@ export const Resume = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+
+
+  @media screen and (max-width:500px) {
+    position: relative;
+    width: 100%;
+    left: 0px;
+    padding-left: 40px;
+    padding-top: 0px;
+  }
 `
 
 export const ResumeSection = styled.h1`

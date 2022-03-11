@@ -47,6 +47,11 @@ export const Name = styled.h1`
   line-height: 1;
   animation: ${scaleIn} 1s ease;
 
+
+  @media screen and (max-width:500px) {
+    font-size: 3em;
+  }
+
 `
 
 
@@ -57,6 +62,9 @@ export const Description = styled.h3`
   font-size: 1.75em;
   animation: ${fadeIn} 2s ease;
 
+  @media screen and (max-width:500px) {
+    font-size: 1.5em;
+  }
 `
 
 export const SocialNetwork = styled.div`
@@ -98,6 +106,10 @@ export const ResumeSection = styled.h1`
   margin-top: 30px;
   margin-bottom: 10px;
   animation: ${fadeIn} 1s ease;
+
+  @media screen and (max-width:500px) {
+    font-size: 30px;
+  }
 `
 export const ResumeItem = styled.h2`
   font-family: ${iconFont};
@@ -111,6 +123,11 @@ export const ResumeData = styled.p`
   font-size: 18px;
   padding: 5px 50px;
   animation: ${slideToLeft} 1s ease;
+
+  @media screen and (max-width:500px) {
+    font-size: 15px;
+    padding-left: 35px;
+  }
 `
 
 export default {}

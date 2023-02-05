@@ -43,9 +43,9 @@ function Home (props){
             </InfoStyled>
             <Resume>
                 <ResumeSection>About</ResumeSection>
-                <ResumeData>Fullstack software engineer open to positions in Seattle.</ResumeData>
+                <ResumeData>Fullstack software engineer in Seattle.</ResumeData>
                 <ResumeData>AWS, CI/CD, JIRA, Jenkins, and React work experience.</ResumeData>
-                <ResumeData>Python, Julia, Java, and JavaScript intermediate experience.</ResumeData>
+                <ResumeData>Clojure, Julia, Java, and JavaScript intermediate experience.</ResumeData>
                 <ResumeData>Explored the National Parks solo for 5 months. #vanlife</ResumeData>
                 
                 <ResumeSection>Experience</ResumeSection>

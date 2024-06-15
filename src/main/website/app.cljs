@@ -14,7 +14,7 @@
                   :align-items "center"}}
          (d/h1 "----- Site Under Construction -----")
          (d/p "updated Jun 15th 2024")
-         (d/p "come back later :) - Owen Miller")))
+         (d/p "come back later :) - Owen")))
 
 
 (defn ^:export init

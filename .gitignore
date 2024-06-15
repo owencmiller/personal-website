@@ -1,7 +1,7 @@
 node_modules/
-.parcel-cache/
-.babelrc
 .DS_Store
 */.DS_Store
 */*/.DS_Store
 dist/
+.shadow-cljs/
+.clj-kondo/

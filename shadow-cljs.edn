@@ -1,0 +1,20 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[lilactown/helix "0.1.9"]
+  [clj-commons/cljss "1.6.4"]
+  [cider/cider-nrepl "0.31.0"]
+  [quil "4.3.1323"]]
+
+ :dev-http {8080 "public"}
+
+ :nrepl {:port 50655}
+ 
+ :builds
+ {:frontend
+  {:target :browser
+   :modules {:main {:init-fn website.app/init}}}}}

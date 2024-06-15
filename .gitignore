@@ -5,13 +5,15 @@ node_modules/
 dist/
 .shadow-cljs/
 .clj-kondo/
-
+.calva/
 
 # Shadow-cljs build output
 public/js/compiled/
+public/js/cljs-runtime/
 
 # Compiled classes
 classes/
 
 # Shadow-cljs config file cache
 .shadow-cljs/
+

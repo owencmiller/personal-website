@@ -22,6 +22,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Set up Java
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+        
     - name: Install shadow-cljs
       run: npm install -g shadow-cljs
 

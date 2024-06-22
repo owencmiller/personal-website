@@ -6,14 +6,18 @@ dist/
 .shadow-cljs/
 .clj-kondo/
 .calva/
+.lsp/
 
 # Shadow-cljs build output
-public/js/compiled/
-public/js/cljs-runtime/
+/public/js/compiled/
+/public/js/cljs-runtime/
+/public/*.map
 
 # Compiled classes
 classes/
 
 # Shadow-cljs config file cache
 .shadow-cljs/
+
+
 

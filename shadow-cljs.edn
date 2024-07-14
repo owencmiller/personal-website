@@ -8,7 +8,8 @@
  [[lilactown/helix "0.1.9"]
   [clj-commons/cljss "1.6.4"]
   [cider/cider-nrepl "0.31.0"]
-  [quil "4.3.1563"]]
+  [quil "4.3.1563"]
+  [nilenso/wscljs "0.2.0"]]
 
  :dev-http {8080 "public"}
 

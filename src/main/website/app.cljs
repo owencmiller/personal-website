@@ -7,7 +7,9 @@
             [quil.core :as q :include-macros true]
             [quil.middleware :as m]
             [website.components.nav-bar :refer [nav-bar]]
-            [website.pages.page :refer [page1]]))
+            [website.pages.ca-graphs :refer [ca-graphs-index]]
+            [website.pages.game :refer [game]]
+            [website.pages.svg :refer [svg]]))
 
 
 (defn eqfn
@@ -56,7 +58,7 @@
 (defn make-move
   [x y]
   (when-not (:result @game-state)
-    (prn "making move")
+    (prn "making move: " x ", " y)
     (let [pos (+ x (* 3 y))]
       (when (and (> x -1)
                  (> y -1)
@@ -107,6 +109,22 @@
                 0 0)))))
 
 
+(defnc static-sketch
+  [{:keys [host] :as options}]
+  (hooks/use-effect
+   []
+   (prn "static-sketch built")
+   (apply q/sketch
+          (concat [:renderer :p2d
+                   :middleware [m/fun-mode]]
+                  (interleave (keys options) (vals options)))))
+  (d/div
+   {:style {:width "100%"
+            :display "flex"
+            :align-items "center"
+            :justify-content "center"}}
+   (d/div {:id host})))
+
 (defn make-sketch
   []
   (q/sketch
@@ -125,8 +143,14 @@
 
 (defnc app1
   []
-  (let []
-    (hooks/use-effect [game-state] (make-sketch))
+  (let [sketch (hooks/use-ref nil)]
+    (hooks/use-effect
+     :once
+     (do
+       (reset! sketch (make-sketch))
+       (fn []
+         (when @sketch
+           (.remove @sketch)))))
     (d/div {:style {:display "flex"
                     :flex-direction "column"
                     :height "100%"
@@ -147,11 +171,12 @@
 (defnc app []
   ($ Router
      ($ nav-bar)
-     (d/div
-      {:style {:width "100%"}}
-      ($ Routes
-         ($ Route {:path "/" :element ($ app1)})
-         ($ Route {:path "/page1" :element ($ page1)})))))
+
+     ($ Routes
+        ($ Route {:path "/" :element ($ app1)})
+        ($ Route {:path "/game" :element ($ game)})
+        ($ Route {:path "/svg" :element ($ svg)})
+        ($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)}))))
 
 
 

@@ -31,5 +31,6 @@
   (d/nav
    {:style nav-style}
    ($ Link {:style (cljs.core/clj->js (merge link-style title-style)) :to "/"} "Owen Miller")
-;;    ($ Link {:style (cljs.core/clj->js link-style) :to "/page1/"} "Page1")
-   ))
+   ($ Link {:style (cljs.core/clj->js link-style) :to "/game/"} "Game")
+   ($ Link {:style (cljs.core/clj->js link-style) :to "/svg/"} "SVG Builder")
+   ($ Link {:style (cljs.core/clj->js link-style) :to "/ca-graphs/"} "CA Graphs")))

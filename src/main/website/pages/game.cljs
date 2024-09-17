@@ -76,7 +76,7 @@
                 game-state]} state]
 
     (hooks/use-effect []
-                      (let [socket (ws/create "ws://192.168.0.249:3000/connect"
+                      (let [socket (ws/create "ws://3.144.189.106:3000/connect"
                                               (create-handlers2 set-state))]
                         (reset! socket-ref socket)
                         (fn [] (.close socket))))

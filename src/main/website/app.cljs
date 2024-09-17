@@ -153,20 +153,25 @@
            (.remove @sketch)))))
     (d/div {:style {:display "flex"
                     :flex-direction "column"
-                    :height "100%"
                     :width "100%"
                     :align-items "center"}}
-           (d/h1 "Site Under Construction")
-           (d/p "updated Jun 15th 2024")
-           (d/p {:style {:margin-bottom "0"}} "i'm working on moving this site to cljs, come back later :)")
-           (d/p {:style {:margin-top "5px"}} " - Owen")
            (d/div {:style {:display "flex"
                            :flex-direction "column"
-                           :align-items "center"}}
-                  (d/div {:id "sketch-id"})
-                  (d/button {:style {:width "70px"
-                                     :margin-top "24px"}
-                             :on-click #(reset! game-state initial-state)} "Reset Game")))))
+                           :height "100%"
+                           :width "50%"
+                           :align-items "left"}}
+                  (d/h1 "I'm a software engineer looking for new opportunities")
+                  (d/p "I worked at Amperity for 2+ years working on identity resolution at scale and interned at Intuit working on internal tools.")
+                  (d/p "clojure(script), java, go, c, aws, spark")
+                  (d/p "Pittsburgh, PA / Remote")
+                  (d/p "Play some tic-tac-toe while you're here:")
+                  (d/div {:style {:display "flex"
+                                  :flex-direction "column"
+                                  :align-items "center"}}
+                         (d/div {:id "sketch-id"})
+                         (d/button {:style {:width "70px"
+                                            :margin-top "24px"}
+                                    :on-click #(reset! game-state initial-state)} "Reset Game"))))))
 
 (defnc app []
   ($ Router

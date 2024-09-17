@@ -1,12 +1,10 @@
 (ns website.pages.game
-  (:require [helix.core :refer [defnc]]
+  (:require [cljs.reader :as r]
+            [goog.net.cookies :as cookies]
+            [helix.core :refer [$ defnc]]
             [helix.dom :as d]
-            [quil.core :as q :include-macros true]
-            [quil.middleware :as m]
             [helix.hooks :as hooks]
             [wscljs.client :as ws]
-            [cljs.reader :as r]
-            [goog.net.cookies :as cookies]
             [wscljs.format :as fmt]))
 
 (defn host-manager
@@ -30,30 +28,64 @@
    :on-close   #(prn "Closing a connection")})
 
 
-(defnc game
+(defn send-message
+  [conn message-map]
+  #(ws/send @conn message-map fmt/edn))
+
+(defn create-handlers2
+  [set-game-state]
+  {:on-message (fn [e]
+                 (let [message (r/read-string (.-data e))]
+                   (prn "recieved message: " message)
+                   (set-game-state merge message)
+                   (let [id (:id message)]
+                     (cookies/set "id" id (* 60 60 24)))))
+   :on-open    #(prn "Opening a new connection")
+   :on-close   #(prn "Closing a connection")})
+
+(defnc lobby
+  [{:keys [conn state]}]
+  (let [[game-id-req set-game-id-req] (hooks/use-state "")]
+    (d/div
+     (d/button {:on-click (send-message conn {:command :host-game
+                                              :id (:id state)
+                                              :data nil})}
+               "Host Game")
+     (d/input {:value game-id-req
+               :on-change #(set-game-id-req (.. % -target -value))})
+     (d/button {:on-click (send-message conn {:command :join-game
+                                              :id (:id state)
+                                              :data {:game-id game-id-req}})}
+               "Join Game"))))
+
+(def initial-state
+  {:in-game? false
+   :game-id nil
+   :is-host? false
+   :id nil
+   :game-state nil})
+
+(defnc game2
   []
-  (let [[host? set-host] (hooks/use-state false)
-        [id set-id] (hooks/use-state nil)
-        [game-state set-game-state] (hooks/use-state [])
-        host-ref (hooks/use-ref host?)
-        id-ref (hooks/use-ref id)
-        socket-ref (hooks/use-ref nil)]
-
-    (hooks/use-effect [host?]
-                      (reset! host-ref host?))
-
-    (hooks/use-effect [id]
-                      (reset! id-ref id)
-                      (cookies/set "id" id (* 60 60 24)))
-
-    (hooks/use-effect []
-                      (cookies/set "id"))
+  (let [[state set-state] (hooks/use-state initial-state)
+        socket-ref (hooks/use-ref nil)
+        {:keys [in-game?
+                game-id
+                id
+                is-host?
+                game-state]} state]
 
     (hooks/use-effect []
                       (let [socket (ws/create "ws://192.168.0.249:3000/connect"
-                                              (create-handlers host-ref id-ref set-host set-id set-game-state))]
+                                              (create-handlers2 set-state))]
                         (reset! socket-ref socket)
                         (fn [] (.close socket))))
+
+    ;; (hooks/use-effect []
+    ;;                   (let [id (cookies/get "id")]
+    ;;                     (when id
+    ;;                       (send-message socket-ref {:command :reconnect
+    ;;                                                 :id id}))))
 
     (d/div {:style {:display "flex"
                     :flex-direction "column"
@@ -61,27 +93,15 @@
                     :width "100%"
                     :align-items "center"}}
            (d/h1 "Game")
-           (if host?
-             (d/div
-              (d/h3 "you are the host and this is the game state:")
-              (d/p (str game-state)))
-             (d/div {:style {:width "100%"
-                             :height "50%"
-                             :display "flex"
-                             :flex-direction "row"}}
-                    (d/button {:style {:width "100%"
-                                       :height "100%"}
-                               :on-click #(ws/send @socket-ref
-                                                   {:command "left"
-                                                    :id (str id)
-                                                    :host? host?}
-                                                   fmt/edn)}
-                              "Left")
-                    (d/button {:style {:width "100%"
-                                       :height "100%"}
-                               :on-click #(ws/send @socket-ref
-                                                   {:command "right"
-                                                    :id (str id)
-                                                    :host? host?}
-                                                   fmt/edn)}
-                              "Right"))))))
+           (if (not in-game?)
+             ($ lobby {:conn socket-ref :state state})
+             (if is-host?
+               (d/p (str "host of: " game-id)
+                    (str "players in game:" game-state))
+               (d/div
+                (d/p (str "you're player: " id " in game: " game-id))
+                (d/button {:on-click (send-message socket-ref {:command :make-move
+                                                               :id id
+                                                               :data {:game-id game-id
+                                                                      :delta 1}})}
+                          "increment")))))))

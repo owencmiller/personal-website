@@ -8,7 +8,7 @@
             [quil.middleware :as m]
             [website.components.nav-bar :refer [nav-bar]]
             [website.pages.ca-graphs :refer [ca-graphs-index]]
-            [website.pages.game :refer [game]]
+            [website.pages.game :refer [game2]]
             [website.pages.svg :refer [svg]]))
 
 
@@ -174,7 +174,7 @@
 
      ($ Routes
         ($ Route {:path "/" :element ($ app1)})
-        ($ Route {:path "/game" :element ($ game)})
+        ($ Route {:path "/game" :element ($ game2)})
         ($ Route {:path "/svg" :element ($ svg)})
         ($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)}))))
 

@@ -179,9 +179,9 @@
 
      ($ Routes
         ($ Route {:path "/" :element ($ app1)})
-        #_($ Route {:path "/game" :element ($ game2)})
-        #_($ Route {:path "/svg" :element ($ svg)})
-        #_($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)}))))
+        ($ Route {:path "/game" :element ($ game2)})
+        ($ Route {:path "/svg" :element ($ svg)})
+        ($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)}))))
 
 
 

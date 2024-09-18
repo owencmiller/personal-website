@@ -76,7 +76,7 @@
                 game-state]} state]
 
     (hooks/use-effect []
-                      (let [socket (ws/create "wss://api.owenmiller.me/connect"
+                      (let [socket (ws/create "wss://api.owenmiller.me:3001/connect"
                                               (create-handlers2 set-state))]
                         (reset! socket-ref socket)
                         (fn [] (.close socket))))

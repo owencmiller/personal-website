@@ -47,3 +47,10 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-east-2'   # optional: defaults to us-east-1
         SOURCE_DIR: './public/'   # Adjust if your build output directory is different
+  
+    - name: Purge Cloudflare Cache
+      uses: jakejarvis/cloudflare-purge-action@master
+      with:
+        api-token: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        zone: db5e8df366ba3c9316392c96b6db9dfd
+        purge: 'all'

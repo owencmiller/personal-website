@@ -18,4 +18,5 @@
  :builds
  {:frontend
   {:target :browser
-   :modules {:main {:init-fn website.app/init}}}}}
+   :modules {:main {:init-fn website.app/init}}
+   :compiler-options {:language-out :ecmascript5}}}}

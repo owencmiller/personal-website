@@ -9,10 +9,7 @@ dist/
 .lsp/
 
 # Shadow-cljs build output
-public/js/compiled/
-public/js/cljs-runtime/
-public/js/
-public/*.map
+public/
 
 # Compiled classes
 classes/

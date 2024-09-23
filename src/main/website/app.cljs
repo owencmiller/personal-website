@@ -160,10 +160,13 @@
                            :height "100%"
                            :width "50%"
                            :align-items "left"}}
-                  (d/h1 "I'm a software engineer looking for new opportunities")
-                  (d/p "I worked at Amperity for 2+ years working on identity resolution at scale and interned at Intuit working on internal tools.")
+                  (d/h2 "I'm a software engineer seeking new opportunities")
+                  (d/p "I worked at Amperity for 2+ years working on identity resolution at scale (ML/clustering algos) and interned at Intuit working on internal tools (data pipelines).")
                   (d/p "clojure(script), java, go, c, aws, spark")
                   (d/p "Pittsburgh, PA / Remote")
+                  (d/p (d/a {:href "http://linkedin.com/in/owen-c-miller"} "linkedin")
+                       (d/br)
+                       (d/a {:href "mailto:mail@owenmiller.me"} "mail [at] owenmiller.me"))
                   (d/p "Play some tic-tac-toe while you're here:")
                   (d/div {:style {:display "flex"
                                   :flex-direction "column"

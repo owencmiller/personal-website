@@ -9,7 +9,8 @@
             [website.components.nav-bar :refer [nav-bar]]
             [website.pages.ca-graphs :refer [ca-graphs-index]]
             [website.pages.game :refer [game2]]
-            [website.pages.svg :refer [svg]]))
+            [website.pages.svg :refer [svg]]
+            [website.pages.mind-map :refer [mind-map-view]]))
 
 
 (defn eqfn
@@ -44,7 +45,7 @@
                      (every? (eqfn "o") values) "o"
                      :else nil))) end-states)
         result (apply str x)]
-    (not (empty? result))))
+    (seq result)))
 
 
 (defn get-next-player
@@ -184,7 +185,8 @@
         ($ Route {:path "/" :element ($ app1)})
         ($ Route {:path "/game" :element ($ game2)})
         ($ Route {:path "/svg" :element ($ svg)})
-        ($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)}))))
+        ($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)})
+        ($ Route {:path "/mind-map" :element ($ mind-map-view)}))))
 
 
 

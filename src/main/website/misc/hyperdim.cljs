@@ -200,3 +200,34 @@
                                 (apply +))
                            iterations))) (range 1 30 2))
   (/ (apply + (rest *1)) (count (rest *1))))
+
+
+
+(comment
+  (require 'clojure.walk)
+  ;; Print tree on level at a time
+
+  (def tree [1 [2 [4]] [3 [5] [6]]])
+
+  (defn solution
+    [tree depth]
+    (let [value (first tree)
+          children (rest tree)]
+      ;; (prn value children)
+      (if (not children)
+        {depth [value]}
+        (merge-with into {depth [value]} 
+                    (apply merge-with into (map #(solution % (inc depth)) children))))))
+
+  (->> (solution tree 0)
+       (into (sorted-map)) 
+       vals
+       (map prn ))
+
+  (merge-with into {:a [1]} {:a [2]})
+
+  (let [x [1]
+        [y z] (rest x)]
+    (when (not y)
+      "hello"))
+  )

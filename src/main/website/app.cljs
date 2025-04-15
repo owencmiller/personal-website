@@ -1,16 +1,19 @@
 (ns website.app
-  (:require ["react-dom/client" :as rdom]
-            ["react-router-dom" :refer (Route  Routes) :rename {BrowserRouter Router}]
-            [helix.core :refer [$ defnc]]
-            [helix.dom :as d]
-            [helix.hooks :as hooks]
-            [quil.core :as q :include-macros true]
-            [quil.middleware :as m]
-            [website.components.nav-bar :refer [nav-bar]]
-            [website.pages.ca-graphs :refer [ca-graphs-index]]
-            [website.pages.game :refer [game2]]
-            [website.pages.svg :refer [svg]]
-            [website.pages.mind-map :refer [mind-map-view]]))
+  (:require
+   ["react-dom/client" :as rdom]
+   ["react-router-dom" :refer (Route  Routes) :rename {BrowserRouter Router}]
+   [helix.core :refer [$ defnc]]
+   [helix.dom :as d]
+   [helix.hooks :as hooks]
+   [quil.core :as q :include-macros true]
+   [quil.middleware :as m]
+   [website.components.nav-bar :refer [nav-bar]]
+   [website.pages.ca-explorer :refer [ca-explorer-view]]
+   [website.pages.ca-graphs :refer [ca-graphs-index]]
+   [website.pages.game :refer [game2]]
+   [website.pages.mind-map :refer [mind-map-view]]
+   [website.pages.quil-game :refer [quil-game-view]]
+   [website.pages.svg :refer [svg]]))
 
 
 (defn eqfn
@@ -77,9 +80,6 @@
                                   (assoc :result (get-next-player state))))))))))
 
 
-;; (swap! game-state (fn [state] (-> state (assoc :result "x"))))
-
-
 (defn draw
   [_]
   (q/background 255)
@@ -106,25 +106,8 @@
     ;; (q/rect-mode :center)
     (q/with-translation [150 150]
       (q/with-rotation [(/ q/PI 6)]
-        (q/text (str (:result @game-state) " wins!")
-                0 0)))))
+        (q/text "You win!" 0 0)))))
 
-
-(defnc static-sketch
-  [{:keys [host] :as options}]
-  (hooks/use-effect
-   []
-   (prn "static-sketch built")
-   (apply q/sketch
-          (concat [:renderer :p2d
-                   :middleware [m/fun-mode]]
-                  (interleave (keys options) (vals options)))))
-  (d/div
-   {:style {:width "100%"
-            :display "flex"
-            :align-items "center"
-            :justify-content "center"}}
-   (d/div {:id host})))
 
 (defn make-sketch
   []
@@ -153,40 +136,74 @@
          (when @sketch
            (.remove @sketch)))))
     (d/div {:style {:display "flex"
-                    :flex-direction "column"
+                    :flex-direction "row"
                     :width "100%"
-                    :align-items "center"}}
+                    :height "100%"
+                     :align-items "flex-start"
+                     :justify-content "flex-start"
+                    :margin-left "30px"
+                    }}
            (d/div {:style {:display "flex"
                            :flex-direction "column"
-                           :height "100%"
                            :width "50%"
-                           :align-items "left"}}
-                  (d/h2 "I'm a software engineer seeking new opportunities")
-                  (d/p "I worked at Amperity for 2+ years working on identity resolution at scale (ML/clustering algos) and interned at Intuit working on internal tools (data pipelines).")
-                  (d/p "clojure(script), java, go, c, aws, spark")
-                  (d/p "Pittsburgh, PA / Remote")
-                  (d/p (d/a {:href "http://linkedin.com/in/owen-c-miller"} "linkedin")
-                       (d/br)
-                       (d/a {:href "mailto:mail@owenmiller.me"} "mail [at] owenmiller.me"))
-                  (d/p "Play some tic-tac-toe while you're here:")
-                  (d/div {:style {:display "flex"
-                                  :flex-direction "column"
-                                  :align-items "center"}}
-                         (d/div {:id "sketch-id"})
-                         (d/button {:style {:width "70px"
-                                            :margin-top "24px"}
-                                    :on-click #(reset! game-state initial-state)} "Reset Game"))))))
+                           :align-items "flex-start"
+                           :justify-content "flex-start"
+                           :margin-left "30px"}}
+                  (d/h1 "Owen Miller")
+                  (d/h3 "Who I am")
+                  (d/ul
+                   (d/li "Founding Engineer @ " (d/a {:href "https://joinattain.com/"} "Attain") " - Building software for distributors")
+                   (d/li "Living in Pittsburgh, PA")
+                   (d/li "Interested in:"
+                         (d/ul 
+                          (d/li "Combinatorial Game Theory")
+                          (d/li "Economics")
+                          (d/li "Aesthetics")))
+                   (d/li "Contactable at:"
+                         (d/ul
+                          (d/li (d/a "mail [at] owenmiller.me"))
+                          (d/li (d/a {:href "http://linkedin.com/in/owen-c-miller"} "linkedin")))))
+                  (d/h3 "Who I was")
+                  (d/ul
+
+                   (d/li "Software Engineer @ " (d/a {:href "https://amperity.com/"} "Amperity")
+                         (d/ul
+                          (d/li "Worked on identity resolution at scale")))
+                   (d/li "Software Engineering Intern @ " (d/a {:href "https://www.intuit.com/"} "Intuit")
+                         (d/ul
+                          (d/li "Built internal data pipelines and tooling")))
+                   (d/li "Studied Computational Mathematics at Rochester Institute of Technology"
+                         (d/ul
+                          (d/li "President of Computer Science House"))))
+                  (d/h3 "What I use")
+                  (d/p "Clojure(script), Typescript, and all the other software tools"))
+           (d/div {:style {:display "flex"
+                           :flex-direction "column"
+                           :width "50%"
+                           :height "100%"
+                           :align-items "center"
+                           :justify-content "center"
+                           }} 
+            (d/p "Play some tic-tac-toe against yourself while you're here:")
+            (d/div {:style {:display "flex"
+                            :flex-direction "column"
+                            :align-items "center"}}
+                   (d/div {:id "sketch-id"})
+                   (d/button {:style {:width "70px"
+                                      :margin-top "24px"}
+                              :on-click #(reset! game-state initial-state)} "Reset Game"))))))
 
 (defnc app []
   ($ Router
-     ($ nav-bar)
-
      ($ Routes
         ($ Route {:path "/" :element ($ app1)})
-        ($ Route {:path "/game" :element ($ game2)})
-        ($ Route {:path "/svg" :element ($ svg)})
-        ($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)})
-        ($ Route {:path "/mind-map" :element ($ mind-map-view)}))))
+        ;; ($ Route {:path "/game" :element ($ game2)})
+        ;; ($ Route {:path "/svg" :element ($ svg)})
+        ;; ($ Route {:path "/ca-graphs" :element ($ ca-graphs-index)})
+        ;; ($ Route {:path "/mind-map" :element ($ mind-map-view)})
+        ;; ($ Route {:path "/ca-explorer" :element ($ ca-explorer-view)})
+        ;; ($ Route {:path "/quil-game" :element ($ quil-game-view)})
+        )))
 
 
 

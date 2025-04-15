@@ -9,9 +9,11 @@
   [clj-commons/cljss "1.6.4"]
   [cider/cider-nrepl "0.31.0"]
   [quil "4.3.1563"]
-  [nilenso/wscljs "0.2.0"]]
+  [nilenso/wscljs "0.2.0"]
+  [reagent "1.2.0"]
+  [io.github.adam-james-v/svg-clj "0.0.11"]]
 
- :dev-http {8080 "public"}
+ :dev-http {8080 {:root "public" :assets {"assets" "assets"}}}
 
  :nrepl {:port 50655}
  
@@ -19,4 +21,5 @@
  {:frontend
   {:target :browser
    :modules {:main {:init-fn website.app/init}}
+   :asset-path "/assets/"
    :compiler-options {:language-out :ecmascript5}}}}

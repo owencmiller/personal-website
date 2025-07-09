@@ -136,10 +136,10 @@
                     }}
            (d/div {:style {:display "flex"
                            :flex-direction "column"
-                           :width "50%"
+                           :width "100%"
                            :align-items "flex-start"
                            :justify-content "flex-start"
-                           :margin-left "30px"}}
+                           :margin "20px"}}
                   (d/h1 "Owen Miller")
                   (d/h3 "Who I am")
                   (d/ul
